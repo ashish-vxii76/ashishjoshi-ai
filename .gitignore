@@ -1,0 +1,5 @@
+.DS_Store
+.claude/
+.serverport
+node_modules/
+*.log
