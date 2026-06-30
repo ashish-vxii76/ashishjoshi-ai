@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ashish Joshi · Data &amp; AI Executive · Agentic AI Leader</title>
+<meta name="description" content="Ashish Joshi, Chief Data &amp; AI Architect &amp; Engineering Director at UBS. 25+ years building enterprise Data &amp; AI across UBS, Credit Suisse and Barclays. #1 in Data Science on Favikon." />
+<!-- Favicons -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<meta name="theme-color" content="#0A0B0F" />
+<!-- Social share (Open Graph + Twitter). NOTE: update og:url and og:image to the ABSOLUTE deployed URL after deploy. -->
+<meta property="og:type" content="profile" />
+<meta property="og:site_name" content="Ashish Joshi" />
+<meta property="og:title" content="Ashish Joshi · Data &amp; AI Executive" />
+<meta property="og:description" content="Chief Data &amp; AI Architect &amp; Engineering Director at UBS. 25+ years across UBS, Credit Suisse &amp; Barclays. #1 in Data Science on Favikon." />
+<meta property="og:image" content="og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Ashish Joshi · Data &amp; AI Executive" />
+<meta name="twitter:description" content="Chief Data &amp; AI Architect at UBS. 25+ years across UBS, Credit Suisse &amp; Barclays. #1 in Data Science on Favikon." />
+<meta name="twitter:image" content="og-image.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#0A0B0F; --ink-2:#0E0F15; --surface:#13151D; --surface-2:#181B24;
+    --gold:#CBA968; --gold-bright:#E8CE96; --gold-deep:#9C8049;
+    --ivory:#ECEDF1; --muted:#9A9DAA; --muted-2:#6E7180;
+    --line:rgba(255,255,255,.08); --line-strong:rgba(255,255,255,.14);
+    --serif:'Playfair Display',Georgia,serif;
+    --sans:'Inter',system-ui,sans-serif;
+    --display:'Manrope','Inter',sans-serif;
+    --maxw:1180px;
+    --ease:cubic-bezier(.22,1,.36,1);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  #certifications,#workshops,#recommendations{scroll-margin-top:96px}
+  body{
+    background:var(--ink); color:var(--ivory); font-family:var(--sans);
+    line-height:1.65; overflow-x:hidden; -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  ::selection{background:var(--gold);color:#0A0B0F}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  section{position:relative}
+
+  /* ---------- Scroll progress + cursor glow ---------- */
+  #progress{position:fixed;top:0;left:0;height:2px;width:0;z-index:200;
+    background:linear-gradient(90deg,var(--gold-deep),var(--gold),var(--gold-bright));box-shadow:0 0 14px var(--gold)}
+  #glow{position:fixed;top:0;left:0;width:520px;height:520px;border-radius:50%;
+    background:radial-gradient(circle,rgba(203,169,104,.10),transparent 60%);
+    pointer-events:none;transform:translate(-50%,-50%);z-index:1;transition:opacity .4s;mix-blend-mode:screen}
+
+  /* ---------- Nav ---------- */
+  header{position:fixed;top:0;left:0;right:0;z-index:100;transition:all .5s var(--ease)}
+  header.scrolled{background:rgba(10,11,15,.72);backdrop-filter:blur(18px) saturate(140%);
+    border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:84px;transition:height .4s var(--ease)}
+  header.scrolled .nav{height:66px}
+  .brand{display:flex;align-items:center;gap:13px;font-family:var(--display);font-weight:700;letter-spacing:.02em}
+  .monogram{width:42px;height:42px;border:1px solid var(--gold);color:var(--gold-bright);
+    display:grid;place-items:center;font-family:var(--serif);font-weight:600;font-size:18px;
+    border-radius:9px;position:relative;overflow:hidden;transition:.4s}
+  .monogram::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent,rgba(232,206,150,.18));opacity:0;transition:.4s}
+  .brand:hover .monogram::after{opacity:1}
+  .brand small{display:block;font-family:var(--sans);font-weight:400;font-size:11px;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--muted)}
+  nav ul{display:flex;gap:18px;list-style:none;align-items:center}
+  nav ul a{font-size:13.5px;letter-spacing:.04em;color:var(--muted);position:relative;transition:color .3s;font-weight:500}
+  nav ul a::after{content:"";position:absolute;left:0;bottom:-6px;height:1px;width:0;background:var(--gold);transition:width .35s var(--ease)}
+  nav ul a:hover{color:var(--ivory)} nav ul a:hover::after{width:100%}
+  .nav-cta{padding:10px 22px;border:1px solid var(--gold-deep);border-radius:50px;color:var(--gold-bright)!important;
+    font-weight:600;background:rgba(203,169,104,.06);
+    transition:background .35s var(--ease),color .35s var(--ease),border-color .35s var(--ease),transform .35s var(--ease),box-shadow .35s var(--ease)}
+  .nav-cta:hover{background:var(--gold);border-color:var(--gold);color:#0A0B0F!important;
+    transform:translateY(-2px);box-shadow:0 8px 22px rgba(203,169,104,.28)}
+  .nav-cta::after{display:none}
+  .has-drop{position:relative}
+  .caret{font-size:9px;color:var(--gold);transition:transform .3s var(--ease);display:inline-block}
+  .has-drop:hover .caret{transform:rotate(180deg)}
+  .dropdown{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(12px);min-width:200px;
+    background:rgba(13,15,21,.97);backdrop-filter:blur(18px) saturate(140%);border:1px solid var(--line);
+    border-radius:13px;padding:8px;list-style:none;opacity:0;visibility:hidden;transition:.32s var(--ease);
+    z-index:120;box-shadow:0 24px 56px rgba(0,0,0,.5)}
+  .dropdown::before{content:"";position:absolute;top:-14px;left:0;right:0;height:14px}
+  .has-drop:hover .dropdown{opacity:1;visibility:visible;transform:translateX(-50%) translateY(8px)}
+  .dropdown li{display:block}
+  .dropdown a{display:block;padding:10px 15px;border-radius:9px;font-size:13px;color:var(--muted);white-space:nowrap;letter-spacing:.02em}
+  .dropdown a::after{display:none}
+  .dropdown a:hover{background:var(--surface);color:var(--gold-bright)}
+  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:0;padding:6px}
+  .burger span{width:24px;height:2px;background:var(--ivory);transition:.3s}
+
+  /* ---------- Hero ---------- */
+  .hero{min-height:100vh;display:flex;align-items:center;padding:110px 0 70px;overflow:hidden}
+  .aurora{position:absolute;inset:0;z-index:0;overflow:hidden}
+  .blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.55;will-change:transform}
+  .b1{width:560px;height:560px;background:radial-gradient(circle,#1c2a4a,transparent 70%);top:-120px;left:-80px;animation:float1 18s var(--ease) infinite}
+  .b2{width:620px;height:620px;background:radial-gradient(circle,#3a2e16,transparent 70%);bottom:-180px;right:-120px;animation:float2 22s var(--ease) infinite}
+  .b3{width:440px;height:440px;background:radial-gradient(circle,#14302e,transparent 70%);top:30%;left:45%;animation:float3 26s var(--ease) infinite}
+  @keyframes float1{50%{transform:translate(120px,80px) scale(1.15)}}
+  @keyframes float2{50%{transform:translate(-100px,-60px) scale(1.1)}}
+  @keyframes float3{50%{transform:translate(-80px,90px) scale(1.2)}}
+  .grid-overlay{position:absolute;inset:0;z-index:0;opacity:.4;
+    background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+    background-size:64px 64px;mask-image:radial-gradient(ellipse 80% 70% at 50% 40%,#000 30%,transparent 75%)}
+  .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.32fr .68fr;gap:60px;align-items:center}
+  .hero-portrait{position:relative;justify-self:center;width:100%;max-width:360px;animation:portraitFloat 7s var(--ease) infinite}
+  @keyframes portraitFloat{50%{transform:translateY(-14px)}}
+  .portrait-frame{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--gold-deep);
+    box-shadow:0 30px 80px rgba(0,0,0,.55),0 0 0 1px rgba(232,206,150,.12);
+    background:linear-gradient(160deg,var(--surface),var(--ink-2))}
+  .portrait-frame::after{content:"";position:absolute;inset:0;border-radius:20px;pointer-events:none;
+    background:linear-gradient(160deg,transparent 55%,rgba(10,11,15,.55));mix-blend-mode:multiply}
+  .portrait-frame img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;filter:saturate(1.02) contrast(1.02)}
+  .portrait-frame.noimg{aspect-ratio:1/1;display:grid;place-items:center}
+  .portrait-frame.noimg::before{content:"AJ";font-family:var(--serif);font-size:96px;font-weight:600;
+    color:var(--gold-deep);opacity:.5}
+  .portrait-frame.noimg::after{display:none}
+  .portrait-ring{position:absolute;inset:-14px;border:1px solid var(--line);border-radius:26px;pointer-events:none;
+    -webkit-mask:linear-gradient(160deg,#000,transparent 70%);mask:linear-gradient(160deg,#000,transparent 70%)}
+  .portrait-badge{position:absolute;bottom:18px;left:18px;right:18px;display:flex;align-items:center;gap:12px;
+    background:rgba(12,13,18,.66);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:13px;padding:11px 14px;z-index:2}
+  .portrait-badge .pb-ic{width:34px;height:34px;border-radius:9px;background:var(--gold);color:#0A0B0F;
+    display:grid;place-items:center;font-family:var(--serif);font-weight:600;font-size:16px;flex-shrink:0}
+  .portrait-badge .pb-t{font-family:var(--display);font-weight:700;font-size:13.5px;letter-spacing:.01em;line-height:1.15}
+  .portrait-badge .pb-s{font-size:11px;color:var(--muted);letter-spacing:.04em}
+  .portrait-tag{position:absolute;top:18px;right:-10px;background:var(--gold);color:#0A0B0F;font-family:var(--display);
+    font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:7px 14px;border-radius:8px;
+    box-shadow:0 12px 30px rgba(0,0,0,.4);z-index:2}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.28em;
+    text-transform:uppercase;color:var(--gold);margin-bottom:26px;font-weight:600}
+  .eyebrow::before{content:"";width:30px;height:1px;background:var(--gold)}
+  .ping{width:7px;height:7px;border-radius:50%;background:var(--gold-bright);box-shadow:0 0 0 0 rgba(232,206,150,.6);animation:ping 2.4s infinite}
+  @keyframes ping{70%{box-shadow:0 0 0 9px rgba(232,206,150,0)}100%{box-shadow:0 0 0 0 rgba(232,206,150,0)}}
+  h1.name{font-family:var(--serif);font-weight:600;font-size:clamp(50px,8.5vw,108px);line-height:.98;
+    letter-spacing:-.01em;margin-bottom:8px}
+  h1.name .l2{font-style:italic;color:transparent;background:linear-gradient(120deg,var(--gold-bright),var(--gold),var(--gold-deep));
+    -webkit-background-clip:text;background-clip:text}
+  .roles{height:34px;margin:22px 0 18px;font-family:var(--display);font-weight:600;font-size:clamp(16px,2.4vw,24px);
+    letter-spacing:.01em;display:flex;align-items:center;gap:12px;color:var(--ivory)}
+  .roles .sep{color:var(--gold)}
+  .role-rotate{display:inline-block;position:relative;color:var(--gold-bright);min-width:1ch}
+  .lede{max-width:680px;color:var(--muted);font-size:clamp(15px,1.6vw,18.5px);line-height:1.75;margin-bottom:38px}
+  .lede b{color:var(--ivory);font-weight:600}
+  .cta-row{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:50px;font-weight:600;
+    font-size:14.5px;letter-spacing:.02em;position:relative;overflow:hidden;z-index:0;transition:transform .3s var(--ease)}
+  .btn svg{width:17px;height:17px}
+  .btn-primary{background:linear-gradient(120deg,var(--gold),var(--gold-bright));color:#0A0B0F}
+  .btn-primary::before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,var(--gold-bright),#fff3d6);transform:translateX(-101%);transition:transform .45s var(--ease);z-index:-1}
+  .btn-primary:hover{transform:translateY(-3px)} .btn-primary:hover::before{transform:translateX(0)}
+  .btn-ghost{border:1px solid var(--line-strong);color:var(--ivory)}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold-bright);transform:translateY(-3px)}
+  .socials{display:flex;gap:18px;margin-top:42px;align-items:center}
+  .socials a{width:42px;height:42px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;
+    color:var(--muted);transition:.35s var(--ease)}
+  .socials a:hover{color:var(--gold-bright);border-color:var(--gold);transform:translateY(-4px)}
+  .socials svg{width:18px;height:18px}
+  .scroll-hint{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);z-index:2;color:var(--muted-2);
+    font-size:11px;letter-spacing:.25em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:10px}
+  .mouse{width:22px;height:34px;border:1.5px solid var(--line-strong);border-radius:12px;position:relative}
+  .mouse::after{content:"";position:absolute;top:7px;left:50%;transform:translateX(-50%);width:3px;height:7px;border-radius:2px;background:var(--gold);animation:scrolldot 1.8s infinite}
+  @keyframes scrolldot{0%{opacity:0;transform:translate(-50%,0)}40%{opacity:1}80%{opacity:0;transform:translate(-50%,12px)}}
+
+  /* ---------- Section heads ---------- */
+  .sec-pad{padding:92px 0}
+  .sec-head{margin-bottom:46px;max-width:720px}
+  .sec-tag{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:18px;display:flex;align-items:center;gap:12px}
+  .sec-tag .num{font-family:var(--serif);font-style:italic;color:var(--muted-2);font-size:14px;letter-spacing:0}
+  .sec-title{font-family:var(--serif);font-weight:500;font-size:clamp(32px,4.6vw,52px);line-height:1.08;letter-spacing:-.01em}
+  .sec-title em{font-style:italic;color:var(--gold-bright)}
+  .sec-sub{color:var(--muted);margin-top:20px;font-size:16.5px;line-height:1.75}
+
+  /* ---------- Marquee ---------- */
+  .marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:26px 0;overflow:hidden;
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
+    mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+  .marquee-track{display:flex;gap:48px;width:max-content;animation:scrollx 38s linear infinite}
+  .marquee:hover .marquee-track{animation-play-state:paused}
+  .marquee-track span{font-family:var(--display);font-weight:600;font-size:17px;color:var(--muted);
+    display:inline-flex;align-items:center;gap:48px;white-space:nowrap}
+  .marquee-track span::after{content:"◆";color:var(--gold-deep);font-size:9px}
+  @keyframes scrollx{to{transform:translateX(-50%)}}
+
+  /* ---------- Stats ---------- */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--ink-2)}
+  .stat{padding:34px 28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);position:relative;transition:background .4s}
+  .stat:hover{background:var(--surface)}
+  .stat:nth-child(4n){border-right:0}
+  .stat-num{font-family:var(--serif);font-weight:600;font-size:clamp(34px,4vw,46px);color:var(--gold-bright);line-height:1;letter-spacing:-.01em}
+  .stat-label{color:var(--muted);font-size:13.5px;margin-top:14px;line-height:1.5}
+
+  /* ---------- About ---------- */
+  .about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:start}
+  .about-body p{color:var(--muted);font-size:16.5px;margin-bottom:22px;line-height:1.8}
+  .about-body p b{color:var(--ivory);font-weight:600}
+  .about-body .first::first-letter{font-family:var(--serif);font-size:62px;float:left;line-height:.8;
+    padding:6px 14px 0 0;color:var(--gold-bright)}
+  .dual{background:linear-gradient(160deg,var(--surface),var(--ink-2));border:1px solid var(--line);border-radius:18px;padding:34px;position:relative;overflow:hidden}
+  .dual::before{content:"";position:absolute;top:-50%;right:-30%;width:300px;height:300px;background:radial-gradient(circle,rgba(203,169,104,.12),transparent 70%)}
+  .dual h3{font-family:var(--serif);font-size:23px;font-weight:500;margin-bottom:8px}
+  .dual .tagline{color:var(--gold);font-size:13px;letter-spacing:.05em;margin-bottom:24px}
+  .dual-item{display:flex;gap:16px;padding:18px 0;border-top:1px solid var(--line);position:relative;z-index:1}
+  .dual-item:first-of-type{border-top:0}
+  .dual-ic{width:40px;height:40px;flex-shrink:0;border:1px solid var(--gold-deep);border-radius:10px;display:grid;place-items:center;color:var(--gold-bright)}
+  .dual-ic svg{width:20px;height:20px}
+  .dual-item h4{font-size:15px;font-weight:600;margin-bottom:3px}
+  .dual-item p{color:var(--muted);font-size:13.5px;line-height:1.55}
+
+  /* ---------- Expertise ---------- */
+  .exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .exp-card{background:var(--ink-2);border:1px solid var(--line);border-radius:16px;padding:32px;transition:.45s var(--ease);position:relative;overflow:hidden}
+  .exp-card::before{content:"";position:absolute;inset:0;background:linear-gradient(160deg,rgba(203,169,104,.08),transparent 55%);opacity:0;transition:.45s}
+  .exp-card:hover{transform:translateY(-6px);border-color:var(--gold-deep)}
+  .exp-card:hover::before{opacity:1}
+  .exp-ic{width:48px;height:48px;border-radius:12px;background:var(--surface);border:1px solid var(--line);
+    display:grid;place-items:center;color:var(--gold-bright);margin-bottom:22px;transition:.45s}
+  .exp-card:hover .exp-ic{background:var(--gold);color:#0A0B0F;transform:rotate(-6deg)}
+  .exp-ic svg{width:23px;height:23px}
+  .exp-card h3{font-size:18px;font-weight:600;margin-bottom:12px;font-family:var(--display)}
+  .exp-card p{color:var(--muted);font-size:14px;line-height:1.65}
+
+  /* ---------- Ventures ---------- */
+  .ventures{display:grid;gap:26px}
+  .venture{display:grid;grid-template-columns:80px 1fr auto;gap:34px;align-items:center;
+    background:var(--ink-2);border:1px solid var(--line);border-radius:18px;padding:38px 40px;
+    transition:.5s var(--ease);position:relative;overflow:hidden;cursor:default}
+  .venture::after{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(var(--gold),var(--gold-deep));transform:scaleY(0);transform-origin:top;transition:transform .5s var(--ease)}
+  .venture:hover{transform:translateY(-5px);border-color:var(--line-strong);background:var(--surface)}
+  .venture:hover::after{transform:scaleY(1)}
+  .v-mono{font-family:var(--serif);font-size:42px;font-style:italic;color:var(--gold-deep);transition:.5s;line-height:1}
+  .venture:hover .v-mono{color:var(--gold-bright)}
+  .v-body h3{font-family:var(--display);font-size:24px;font-weight:700;letter-spacing:.01em;display:flex;align-items:baseline;gap:14px;margin-bottom:6px}
+  .v-body h3 .v-kind{font-family:var(--sans);font-size:11.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+  .v-body p{color:var(--muted);font-size:14.5px;line-height:1.6;max-width:640px}
+  .v-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .v-tags span{font-size:11px;letter-spacing:.04em;color:var(--muted);border:1px solid var(--line);border-radius:50px;padding:4px 12px}
+  .v-arrow{width:46px;height:46px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--muted);transition:.45s}
+  .venture:hover .v-arrow{background:var(--gold);color:#0A0B0F;border-color:var(--gold);transform:rotate(-45deg)}
+  .v-arrow svg{width:18px;height:18px}
+
+  /* ---------- Experience timeline ---------- */
+  .timeline{position:relative;padding-left:30px}
+  .timeline::before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:1px;background:linear-gradient(var(--gold),transparent)}
+  .tl-item{position:relative;padding:0 0 48px 40px}
+  .tl-item:last-child{padding-bottom:0}
+  .tl-item::before{content:"";position:absolute;left:-25px;top:6px;width:11px;height:11px;border-radius:50%;
+    background:var(--ink);border:2px solid var(--gold);transition:.4s}
+  .tl-item:hover::before{background:var(--gold);box-shadow:0 0 16px var(--gold)}
+  .tl-period{font-size:12.5px;letter-spacing:.1em;color:var(--gold);font-weight:600;text-transform:uppercase}
+  .tl-role{font-family:var(--display);font-size:20px;font-weight:700;margin:6px 0 2px}
+  .tl-co{color:var(--ivory);font-size:15px;margin-bottom:12px;font-weight:500}
+  .tl-co span{color:var(--muted-2);font-weight:400}
+  .tl-item p{color:var(--muted);font-size:14.5px;line-height:1.7}
+  .tl-item ul{list-style:none;margin-top:12px;display:grid;gap:7px}
+  .tl-item li{color:var(--muted);font-size:14px;padding-left:0;position:relative;line-height:1.6}
+  .tl-item li::before{content:"";position:absolute;left:-16px;top:9px;width:6px;height:6px;background:var(--gold-deep);border-radius:1px;transform:rotate(45deg)}
+  .tl-item li b{color:var(--ivory);font-weight:600}
+  .tl-group{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:20px 0 9px}
+  .tl-roles{font-size:12.5px;color:var(--muted-2);margin:-2px 0 12px;line-height:1.55}
+  .tl-roles b{color:var(--muted);font-weight:600}
+  .tl-recognition{margin-top:18px;font-size:13px;color:var(--muted);line-height:1.65;border-top:1px solid var(--line);padding-top:14px}
+  .tl-recognition b{color:var(--gold);font-weight:600}
+
+  /* ---------- Voice / thought leadership ---------- */
+  .voice-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:22px}
+  .voice-card{background:var(--ink-2);border:1px solid var(--line);border-radius:16px;padding:32px;transition:.45s var(--ease);position:relative;overflow:hidden}
+  .voice-card:hover{transform:translateY(-5px);border-color:var(--gold-deep)}
+  .voice-card .badge{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:16px;display:block}
+  .voice-card h3{font-family:var(--serif);font-size:clamp(22px,2.4vw,30px);font-weight:500;line-height:1.15;margin-bottom:10px}
+  .voice-card h3 em{font-style:italic;color:var(--gold-bright)}
+  .voice-card p{color:var(--muted);font-size:14.5px;line-height:1.6}
+  .vc-rank{grid-column:span 5;background:linear-gradient(160deg,var(--surface),var(--ink-2))}
+  .vc-rank .big{font-family:var(--serif);font-size:78px;font-weight:600;color:var(--gold-bright);line-height:1}
+  .vc-news{grid-column:span 7}
+  .vc-book{grid-column:span 7}
+  .vc-creator{grid-column:span 5;background:linear-gradient(160deg,var(--surface),var(--ink-2))}
+  .availability{display:inline-flex;align-items:stretch;gap:22px;margin:8px 0 32px;border:1px solid var(--line);border-radius:16px;padding:15px 24px;background:rgba(255,255,255,.02);flex-wrap:wrap}
+  .av-item{display:flex;align-items:center;gap:13px}
+  .av-ic{color:var(--gold-bright);flex-shrink:0}
+  .av-ic svg{width:19px;height:19px;display:block}
+  .av-item .adot{width:9px;height:9px;border-radius:50%;background:#5fd27a;box-shadow:0 0 0 0 rgba(95,210,122,.55);animation:pingGreen 2.4s infinite;flex-shrink:0}
+  .av-l1{display:block;font-size:13.5px;font-weight:600;color:var(--ivory);line-height:1.35}
+  .av-l2{display:block;font-size:12.5px;color:var(--muted);line-height:1.4}
+  .av-sep{width:1px;background:var(--line);align-self:stretch}
+  .follow-link{display:inline-flex;align-items:center;gap:9px;margin-top:18px;font-size:13px;font-weight:600;color:#0A0B0F;background:var(--gold);padding:10px 18px;border-radius:50px;transition:.3s var(--ease)}
+  .follow-link svg{width:15px;height:15px}
+  .follow-link:hover{background:var(--gold-bright);transform:translateY(-2px);box-shadow:0 8px 22px rgba(203,169,104,.28)}
+  @keyframes pingGreen{70%{box-shadow:0 0 0 8px rgba(95,210,122,0)}100%{box-shadow:0 0 0 0 rgba(95,210,122,0)}}
+  .fav-link{display:inline-block;margin-top:16px;font-size:12.5px;font-weight:600;letter-spacing:.03em;color:var(--gold-bright)}
+  a.vc-rank:hover .fav-link{text-decoration:underline}
+  a.portrait-tag{text-decoration:none;cursor:pointer;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+  a.portrait-tag:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,0,0,.5)}
+  .rec-band{display:flex;align-items:center;gap:26px;margin-top:22px;background:linear-gradient(160deg,var(--surface),var(--ink-2));border:1px solid var(--line);border-radius:18px;padding:30px 36px;flex-wrap:wrap}
+  .rec-num{font-family:var(--serif);font-size:60px;font-weight:600;color:var(--gold-bright);line-height:1}
+  .rec-body{flex:1;min-width:230px}
+  .rec-body h3{font-family:var(--serif);font-size:23px;font-weight:500;margin-bottom:6px}
+  .rec-body p{color:var(--muted);font-size:14px;line-height:1.55}
+  .rec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:4px}
+  .rec-card{background:var(--ink-2);border:1px solid var(--line);border-radius:16px;padding:26px;display:flex;flex-direction:column;transition:.4s var(--ease)}
+  .rec-card:hover{transform:translateY(-5px);border-color:var(--gold-deep)}
+  .rec-card .qm{font-family:var(--serif);font-size:46px;color:var(--gold-deep);line-height:.2;height:20px}
+  .rec-card blockquote{color:var(--ivory);font-size:14px;line-height:1.62;margin:6px 0 18px;font-style:italic;flex:1}
+  .rec-author{display:flex;align-items:center;gap:12px;padding-top:16px;border-top:1px solid var(--line)}
+  .rec-avatar{width:40px;height:40px;border-radius:50%;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;font-family:var(--display);font-weight:700;color:var(--gold-bright);flex-shrink:0;font-size:14px}
+  .ra-name{font-size:13.5px;font-weight:700;color:var(--ivory);line-height:1.3}
+  .ra-title{font-size:12px;color:var(--muted);line-height:1.35}
+  .rec-link{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:11.5px;font-weight:600;letter-spacing:.04em;color:var(--gold-bright);align-self:flex-start}
+  .rec-link:hover{text-decoration:underline}
+  @media(max-width:900px){.rec-grid{grid-template-columns:1fr}}
+  .pubs{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+  .pubs span{font-size:12px;border:1px solid var(--line);border-radius:50px;padding:5px 14px;color:var(--muted)}
+
+  /* ---------- AI & I flagship ---------- */
+  .sec-tag .star{font-family:var(--sans);color:var(--gold-bright);font-size:13px;letter-spacing:0}
+  .aii-pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:30px}
+  .aii-card{background:var(--ink-2);border:1px solid var(--line);border-radius:16px;padding:32px;transition:.45s var(--ease);position:relative;overflow:hidden}
+  .aii-card::before{content:"";position:absolute;inset:0;background:linear-gradient(160deg,rgba(203,169,104,.08),transparent 55%);opacity:0;transition:.45s}
+  .aii-card:hover{transform:translateY(-6px);border-color:var(--gold-deep)} .aii-card:hover::before{opacity:1}
+  .aii-card .pnum{font-family:var(--serif);font-style:italic;font-size:30px;color:var(--gold-deep);line-height:1}
+  .aii-card .pkind{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600;margin:16px 0 8px}
+  .aii-card h3{font-family:var(--display);font-size:19px;font-weight:700;margin-bottom:10px}
+  .aii-card p{color:var(--muted);font-size:14px;line-height:1.6}
+  .aii-band{display:grid;grid-template-columns:1.4fr 1fr;gap:34px;align-items:center;
+    background:linear-gradient(160deg,var(--surface),var(--ink-2));border:1px solid var(--line);border-radius:18px;padding:36px 40px}
+  .aii-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:26px 20px}
+  .aii-metrics .m b{display:block;font-family:var(--serif);font-size:30px;color:var(--gold-bright);line-height:1}
+  .aii-metrics .m span{font-size:12.5px;color:var(--muted);margin-top:6px;display:block;line-height:1.4}
+  .aii-cta{text-align:left}
+  .aii-cta h4{font-family:var(--serif);font-size:22px;font-weight:500;margin-bottom:8px}
+  .aii-cta p{color:var(--muted);font-size:13.5px;margin-bottom:20px}
+
+  /* ---------- Research & Publications ---------- */
+  .research-feat{background:linear-gradient(160deg,var(--surface),var(--ink-2));border:1px solid var(--line);
+    border-radius:18px;padding:42px;position:relative;overflow:hidden;margin-bottom:24px}
+  .research-feat::before{content:"";position:absolute;top:-40%;right:-15%;width:340px;height:340px;background:radial-gradient(circle,rgba(203,169,104,.10),transparent 70%)}
+  .research-feat .rf-venue{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:16px;display:flex;flex-wrap:wrap;gap:8px 16px;position:relative;z-index:1}
+  .research-feat h3{font-family:var(--serif);font-weight:500;font-size:clamp(22px,2.8vw,32px);line-height:1.18;max-width:880px;position:relative;z-index:1}
+  .research-feat .rf-sum{color:var(--muted);font-size:15px;line-height:1.75;max-width:840px;margin-top:18px;position:relative;z-index:1}
+  .rf-metrics{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;position:relative;z-index:1}
+  .rf-metrics span{font-size:12.5px;color:var(--ivory);border:1px solid var(--gold-deep);border-radius:50px;padding:6px 14px;background:rgba(203,169,104,.06)}
+  .rf-metrics span b{color:var(--gold-bright);font-weight:600}
+  .rf-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;position:relative;z-index:1}
+  .rf-btn{display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:600;padding:11px 18px;border:1px solid var(--line-strong);border-radius:50px;color:var(--ivory);transition:.35s var(--ease)}
+  .rf-btn svg{width:15px;height:15px}
+  .rf-btn:hover{border-color:var(--gold);color:var(--gold-bright);transform:translateY(-3px)}
+  .wp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .wp-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .wp-meta{font-size:12px;color:var(--muted-2);margin-top:14px;line-height:1.5}
+  .wp-card{background:var(--ink-2);border:1px solid var(--line);border-radius:16px;padding:30px;transition:.45s var(--ease);position:relative;overflow:hidden}
+  .wp-card:hover{transform:translateY(-6px);border-color:var(--gold-deep)}
+  .wp-card .wp-ic{width:42px;height:42px;border-radius:11px;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;color:var(--gold-bright);margin-bottom:18px}
+  .wp-card .wp-ic svg{width:21px;height:21px}
+  .wp-card .badge{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:10px;display:block}
+  .wp-card h3{font-family:var(--serif);font-size:21px;font-weight:500;line-height:1.2;margin-bottom:8px}
+  .wp-card p{color:var(--muted);font-size:13.5px;line-height:1.6}
+  .wp-card.soon{border-style:dashed;opacity:.85}
+  .wp-card.soon .badge{color:var(--muted-2)}
+
+  /* ---------- Masters Projects ---------- */
+  .proj-disc{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600;
+    margin:34px 0 18px;display:flex;align-items:center;gap:14px}
+  .proj-disc::after{content:"";flex:1;height:1px;background:var(--line)}
+  .proj-disc:first-of-type{margin-top:0}
+  .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .proj-card{background:var(--ink-2);border:1px solid var(--line);border-radius:14px;padding:24px;transition:.4s var(--ease);position:relative;overflow:hidden}
+  .proj-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(var(--gold),var(--gold-deep));transform:scaleY(0);transform-origin:top;transition:transform .4s var(--ease)}
+  .proj-card:hover{transform:translateY(-5px);border-color:var(--gold-deep)}
+  .proj-card:hover::before{transform:scaleY(1)}
+  .proj-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:15px}
+  .proj-ic{width:40px;height:40px;border-radius:10px;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;color:var(--gold-bright);transition:.4s;flex-shrink:0}
+  .proj-card:hover .proj-ic{background:var(--gold);color:#0A0B0F;transform:rotate(-6deg)}
+  .proj-ic svg{width:20px;height:20px}
+  .proj-cat{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;border:1px solid var(--line);border-radius:50px;padding:4px 11px;white-space:nowrap}
+  .proj-card h3{font-family:var(--display);font-size:16px;font-weight:700;margin-bottom:6px;line-height:1.25}
+  .proj-card p{color:var(--muted);font-size:12.8px;line-height:1.55}
+  .proj-card.has-repo{cursor:pointer}
+  .proj-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+  .proj-tags span{font-size:10.5px;letter-spacing:.02em;color:var(--muted);border:1px solid var(--line);border-radius:50px;padding:3px 9px;white-space:nowrap}
+  .proj-repo{display:inline-flex;align-items:center;gap:7px;margin-top:14px;font-size:12px;font-weight:600;color:var(--muted);transition:color .3s}
+  .proj-repo svg{width:14px;height:14px}
+  .proj-card.has-repo:hover .proj-repo{color:var(--gold-bright)}
+  /* ---------- Hackathon ---------- */
+  .hack-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .hack-card{background:var(--ink-2);border:1px solid var(--line);border-radius:16px;padding:36px;transition:.45s var(--ease);position:relative;overflow:hidden}
+  .hack-card.lead{background:linear-gradient(160deg,var(--surface),var(--ink-2))}
+  .hack-card.lead::before{content:"";position:absolute;top:-40%;right:-20%;width:280px;height:280px;background:radial-gradient(circle,rgba(203,169,104,.10),transparent 70%)}
+  .hack-card:hover{transform:translateY(-5px);border-color:var(--gold-deep)}
+  .hack-card>*{position:relative;z-index:1}
+  .hack-card .badge{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px;display:block}
+  .hack-card .big{font-family:var(--serif);font-size:60px;font-weight:600;color:var(--gold-bright);line-height:1;margin-bottom:8px}
+  .hack-card h3{font-family:var(--serif);font-size:26px;font-weight:500;line-height:1.18;margin-bottom:10px}
+  .hack-card h3 em{font-style:italic;color:var(--gold-bright)}
+  .hack-card p{color:var(--muted);font-size:14.5px;line-height:1.65}
+  /* ---------- Skills ---------- */
+  .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .skill-group{background:var(--ink-2);border:1px solid var(--line);border-radius:16px;padding:28px;transition:.4s var(--ease)}
+  .skill-group:hover{border-color:var(--gold-deep);transform:translateY(-4px)}
+  .skill-group h3{font-family:var(--display);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:18px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chips span{font-size:12.5px;color:var(--ivory);border:1px solid var(--line);border-radius:8px;padding:6px 12px;background:var(--surface);transition:.3s}
+  .chips span:hover{border-color:var(--gold);color:var(--gold-bright);transform:translateY(-2px)}
+  /* ---------- Awards ---------- */
+  .awards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .award-card{background:var(--ink-2);border:1px solid var(--line);border-radius:14px;padding:26px;display:flex;gap:16px;align-items:flex-start;transition:.4s var(--ease);position:relative;overflow:hidden}
+  .award-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(var(--gold),var(--gold-deep));transform:scaleY(0);transform-origin:top;transition:transform .4s var(--ease)}
+  .award-card:hover{border-color:var(--gold-deep);transform:translateY(-4px)}
+  .award-card:hover::before{transform:scaleY(1)}
+  .award-ic{width:42px;height:42px;flex-shrink:0;border-radius:11px;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;color:var(--gold-bright);transition:.4s}
+  .award-card:hover .award-ic{background:var(--gold);color:#0A0B0F;transform:rotate(-6deg)}
+  .award-ic svg{width:21px;height:21px}
+  .award-card h3{font-family:var(--display);font-size:15px;font-weight:700;margin-bottom:4px;line-height:1.25}
+  .award-card p{color:var(--muted);font-size:12.8px;line-height:1.5}
+
+  @media(max-width:900px){
+    .aii-pillars,.wp-grid{grid-template-columns:1fr}
+    .aii-band{grid-template-columns:1fr;gap:28px}
+    .research-feat{padding:30px}
+    .proj-grid{grid-template-columns:repeat(2,1fr)}
+    .hack-grid{grid-template-columns:1fr}
+    .skills-grid{grid-template-columns:repeat(2,1fr)}
+    .awards-grid{grid-template-columns:repeat(2,1fr)}
+  }
+
+  /* ---------- Education ---------- */
+  .edu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-bottom:30px}
+  .edu-card{background:var(--ink-2);border:1px solid var(--line);border-radius:14px;padding:28px;display:flex;gap:20px;align-items:flex-start;transition:.4s}
+  .edu-card:hover{border-color:var(--gold-deep);transform:translateY(-4px)}
+  .edu-yr{font-family:var(--serif);font-style:italic;color:var(--gold-deep);font-size:14px;white-space:nowrap}
+  .edu-card h3{font-size:16.5px;font-weight:600;margin-bottom:4px}
+  .edu-card p{color:var(--muted);font-size:13.5px}
+  .certs{border:1px solid var(--line);border-radius:14px;padding:26px 30px;background:var(--ink-2)}
+  .certs .lab{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:16px;display:block}
+  .certs-list{display:flex;flex-wrap:wrap;gap:10px}
+  .certs-list span{font-size:13px;border:1px solid var(--line);border-radius:8px;padding:7px 14px;color:var(--muted);transition:.3s}
+  .certs-list span:hover{border-color:var(--gold);color:var(--gold-bright)}
+  .train-row{margin-top:16px}
+  .train-cat{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2);font-weight:600;margin-bottom:9px}
+
+  /* ---------- Contact ---------- */
+  .contact{text-align:center;padding:104px 0}
+  .contact .aurora .b1{top:-200px;left:30%}
+  .contact h2{font-family:var(--serif);font-weight:500;font-size:clamp(38px,6vw,76px);line-height:1.05;margin-bottom:24px;position:relative;z-index:2}
+  .contact h2 em{font-style:italic;color:var(--gold-bright)}
+  .contact .lede{margin:0 auto 40px;text-align:center;position:relative;z-index:2}
+  .contact-cta{position:relative;z-index:2}
+  .mail-link{display:inline-flex;align-items:center;gap:14px;font-family:var(--display);font-size:clamp(18px,2.6vw,26px);
+    font-weight:600;color:var(--gold-bright);border-bottom:1px solid var(--gold-deep);padding-bottom:6px;transition:.4s;position:relative;z-index:2}
+  .mail-link:hover{gap:20px;border-color:var(--gold-bright)}
+
+  /* ---------- Footer ---------- */
+  footer{border-top:1px solid var(--line);padding:46px 0}
+  .foot{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+  .foot p{color:var(--muted-2);font-size:13px}
+  .foot .fsoc{display:flex;gap:22px}
+  .foot .fsoc a{color:var(--muted);font-size:13px;transition:.3s}
+  .foot .fsoc a:hover{color:var(--gold-bright)}
+
+  /* ---------- Reveal animation ---------- */
+  .reveal{opacity:0;transform:translateY(38px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+  .reveal.in{opacity:1;transform:none}
+  .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
+  .reveal.d4{transition-delay:.32s}.reveal.d5{transition-delay:.4s}
+
+  /* ---------- Responsive ---------- */
+  @media(max-width:900px){
+    .hero .wrap{grid-template-columns:1fr;gap:46px}
+    .hero-portrait{grid-row:1;max-width:280px;margin-top:30px}
+    .hero{padding-top:110px}
+    .about-grid{grid-template-columns:1fr;gap:40px}
+    .exp-grid{grid-template-columns:repeat(2,1fr)}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .stat:nth-child(2n){border-right:0}
+    .voice-grid>*{grid-column:span 12!important}
+    .venture{grid-template-columns:1fr;gap:18px;padding:30px}
+    .v-arrow{display:none}
+    .v-mono{font-size:34px}
+  }
+  @media(max-width:1024px){
+    nav ul{position:fixed;inset:0 0 0 auto;width:80%;max-width:340px;background:rgba(12,13,18,.98);
+      backdrop-filter:blur(20px);flex-direction:column;justify-content:flex-start;align-items:flex-start;
+      gap:20px;padding:104px 32px 48px;overflow-y:auto;transform:translateX(100%);
+      transition:transform .5s var(--ease);border-left:1px solid var(--line);z-index:90}
+    nav ul.open{transform:translateX(0)}
+    nav ul>li{width:100%}
+    nav ul a{font-size:17px}
+    .caret{display:none}
+    .dropdown{position:static;transform:none;opacity:1;visibility:visible;background:none;border:0;
+      box-shadow:none;backdrop-filter:none;padding:8px 0 0 16px;min-width:0}
+    .dropdown a{font-size:14.5px;padding:7px 0;color:var(--muted-2)}
+    .dropdown a:hover{background:none;color:var(--gold-bright)}
+    .burger{display:flex;z-index:95}
+    .burger.x span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .burger.x span:nth-child(2){opacity:0}
+    .burger.x span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+    .brand small{display:none}
+  }
+  @media(max-width:680px){
+    .av-sep{display:none}
+    .exp-grid{grid-template-columns:1fr}
+    .edu-grid{grid-template-columns:1fr}
+    .proj-grid{grid-template-columns:1fr}
+    .skills-grid{grid-template-columns:1fr}
+    .awards-grid{grid-template-columns:1fr}
+    .sec-pad{padding:64px 0}
+    .wrap{padding:0 20px}
+    .about-body .first::first-letter{font-size:48px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation-duration:.001ms!important;transition-duration:.2s!important}
+    .blob{animation:none}.marquee-track{animation:none}
+  }
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<div id="glow"></div>
+
+<!-- ================= NAV ================= -->
+<header id="header">
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <span class="monogram">AJ</span>
+      <span>Ashish Joshi<small>Data &amp; AI Executive</small></span>
+    </a>
+    <nav>
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li class="has-drop"><a href="#expertise">Expertise <span class="caret">▾</span></a>
+          <ul class="dropdown">
+            <li><a href="#expertise">Core Expertise</a></li>
+            <li><a href="#skills">Skills &amp; Stack</a></li>
+          </ul>
+        </li>
+        <li class="has-drop"><a href="#ventures">AI Projects <span class="caret">▾</span></a>
+          <ul class="dropdown">
+            <li><a href="#ventures">Agentic AI Projects</a></li>
+            <li><a href="#hackathon">Hackathon</a></li>
+          </ul>
+        </li>
+        <li><a href="#experience">Experience</a></li>
+        <li class="has-drop"><a href="#awards">Recognition <span class="caret">▾</span></a>
+          <ul class="dropdown">
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
+            <li><a href="#research">Research &amp; Publications</a></li>
+            <li><a href="#voice">Brand &amp; Voice</a></li>
+          </ul>
+        </li>
+        <li class="has-drop"><a href="#education">Education <span class="caret">▾</span></a>
+          <ul class="dropdown">
+            <li><a href="#education">Core</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#workshops">Workshops</a></li>
+            <li><a href="#projects">Masters Projects</a></li>
+          </ul>
+        </li>
+        <li><a href="https://www.linkedin.com/in/ashish--joshi/" target="_blank" rel="noopener" class="nav-cta">Get in touch</a></li>
+      </ul>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="aurora">
+    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  </div>
+  <div class="grid-overlay"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+    <span class="eyebrow"><span class="ping"></span> Chief Data &amp; AI Architect · Engineering Director · UBS</span>
+    <h1 class="name">Ashish <span class="l2">Joshi</span></h1>
+    <div class="roles">
+      <span>I lead</span><span class="sep">·</span><span class="role-rotate" id="role">Data &amp; AI strategy</span>
+    </div>
+    <p class="lede">
+      Enterprise technology leader with <b>25+ years</b> setting and executing Data &amp; AI strategy across
+      <b>UBS, Credit Suisse and Barclays</b>, accountable for architecture, delivery and investment on a
+      <b>$100M+ portfolio</b> spanning AMER, EMEA and APAC. I industrialised <b>agentic AI</b> into a portfolio
+      of in-house platforms and re-engineered how delivery itself runs against live KPIs, not decks.
+    </p>
+    <div class="availability">
+      <div class="av-item">
+        <span class="av-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+        <div><span class="av-l1">Based in Pune</span><span class="av-l2">Maharashtra, India</span></div>
+      </div>
+      <span class="av-sep"></span>
+      <div class="av-item">
+        <span class="adot"></span>
+        <div><span class="av-l1">Open to global remote</span><span class="av-l2">Head of Data &amp; AI / Applied AI leadership, advisory &amp; board roles</span></div>
+      </div>
+    </div>
+    <div class="cta-row">
+      <a href="#ventures" class="btn btn-primary">
+        Explore my ventures
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="assets/Ashish-Joshi-CV.pdf" target="_blank" class="btn btn-ghost">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+        Download CV
+      </a>
+    </div>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/ashish--joshi" target="_blank" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"/></svg>
+      </a>
+      <a href="https://github.com/ashish-vxii76" target="_blank" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+      </a>
+      <a href="mailto:ashish.dataxai@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+      </a>
+    </div>
+    </div><!-- /hero-copy -->
+    <div class="hero-portrait">
+      <span class="portrait-ring"></span>
+      <a class="portrait-tag" href="https://creator.favikon.com/profile/66f7a7b34f9661208cdc3115/social-coverage/" target="_blank" rel="noopener">#1 · Favikon</a>
+      <div class="portrait-frame">
+        <img src="assets/ashish.jpg" alt="Ashish Joshi" loading="eager"
+             onerror="this.style.display='none';this.closest('.portrait-frame').classList.add('noimg')" />
+        <div class="portrait-badge">
+          <span class="pb-ic">AJ</span>
+          <div><div class="pb-t">Ashish Joshi</div><div class="pb-s">Chief Data &amp; AI Architect, UBS</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint"><span class="mouse"></span>Scroll</div>
+</section>
+
+<!-- ================= MARQUEE ================= -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Agentic AI</span><span>LLM Orchestration</span><span>RAG</span><span>SR 11-7 Model Risk</span>
+    <span>Enterprise Architecture</span><span>Basel III / RWA</span><span>Databricks</span><span>LangChain</span>
+    <span>Azure · AWS · GCP</span><span>Event Sourcing</span><span>Kafka · Spark</span><span>Responsible AI</span>
+    <span>Agentic AI</span><span>LLM Orchestration</span><span>RAG</span><span>SR 11-7 Model Risk</span>
+    <span>Enterprise Architecture</span><span>Basel III / RWA</span><span>Databricks</span><span>LangChain</span>
+    <span>Azure · AWS · GCP</span><span>Event Sourcing</span><span>Kafka · Spark</span><span>Responsible AI</span>
+  </div>
+</div>
+
+<!-- ================= IMPACT ================= -->
+<section class="sec-pad" id="impact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag"><span class="num">01</span> Selected Impact</div>
+      <h2 class="sec-title">Technology converted into <em>measurable enterprise value</em>.</h2>
+      <p class="sec-sub">Not delivery alone. Regulatory capital unlocked, run-cost removed, P&amp;L grown, and requirement-to-delivery compressed up to 10×.</p>
+    </div>
+    <div class="stats reveal">
+      <div class="stat"><div class="stat-num" data-target="6" data-prefix="CHF " data-suffix="Bn">CHF 6Bn</div><div class="stat-label">Regulatory capital unlocked · Basel III / RWA</div></div>
+      <div class="stat"><div class="stat-num" data-target="125" data-prefix="$" data-suffix="M">$125M</div><div class="stat-label">At-risk client account turned around</div></div>
+      <div class="stat"><div class="stat-num" data-target="100" data-prefix="$" data-suffix="M+">$100M+</div><div class="stat-label">Technology portfolio owned</div></div>
+      <div class="stat"><div class="stat-num" data-target="150" data-suffix="+">150+</div><div class="stat-label">Engineers led across 3 regions</div></div>
+      <div class="stat"><div class="stat-num" data-target="11" data-prefix="CHF " data-suffix="M+">CHF 11M+</div><div class="stat-label">Annual run-cost removed post-merger</div></div>
+      <div class="stat"><div class="stat-num" data-target="10" data-suffix="×">10×</div><div class="stat-label">Faster requirement-to-delivery</div></div>
+      <div class="stat"><div class="stat-num" data-target="25" data-suffix="+">25+</div><div class="stat-label">Years across UBS, Credit Suisse &amp; Barclays</div></div>
+      <div class="stat"><div class="stat-num" data-target="1" data-prefix="#">#1</div><div class="stat-label">Data Science creator on Favikon</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="sec-pad" id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag"><span class="num">02</span> Profile</div>
+      <h2 class="sec-title">An enterprise AI leader who also <em>sees in light and shadow</em>.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-body reveal">
+        <p class="first">I set and execute Data &amp; AI strategy at the Group level, carrying funding and prioritisation through executive governance, and directing organisations of up to <b>150 across AMER, EMEA and APAC</b>. My remit spans architecture, delivery and investment decisioning for the Group Compliance &amp; Operational-Risk technology portfolio at UBS.</p>
+        <p>The work isn't theory. I've <b>unlocked CHF 6Bn in regulatory capital</b> by re-engineering Basel III capital and RWA reporting, delivered <b>100% SOX &amp; GDPR audit success across 200+ applications</b> with zero material findings, and completed the Credit Suisse–UBS integration <b>6–9 months ahead of plan</b> while removing CHF 11M+ in annual run-cost.</p>
+        <p>Most recently I stood up an in-house <b>agent factory</b> on the bank's internal LLM: a portfolio of five agentic platforms under common standards, with an industrialised lifecycle of design, build, evaluation and certification gates, and full traceability from agent decision to merged pull request. SR 11-7-ready governance makes it audit-defensible by design.</p>
+        <p>I'm also a recognised external voice: <b>ranked #1 in Data Science on Favikon</b>, publisher of <i>THE AI DISPATCH</i> newsletter and white papers, and a published applied-AI researcher (LJMU MSc &amp; IEEE).</p>
+      </div>
+      <aside class="dual reveal d2">
+        <h3>A dual practitioner identity</h3>
+        <div class="tagline">Technical depth · creative communication</div>
+        <div class="dual-item">
+          <span class="dual-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 4v5"/></svg></span>
+          <div><h4>Enterprise Data &amp; AI Leader</h4><p>CDAO / CTO-class architecture, governance and delivery in regulated banking.</p></div>
+        </div>
+        <div class="dual-item">
+          <span class="dual-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg></span>
+          <div><h4>Fashion Photographer</h4><p>A working creative practice; a brand that bridges technical rigour and visual storytelling.</p></div>
+        </div>
+        <div class="dual-item">
+          <span class="dual-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.5 5.5L20 11l-5.5 2.5L12 19l-2.5-5.5L4 11l5.5-2.5z"/></svg></span>
+          <div><h4>#1 Data Science on Favikon</h4><p>Favikon Ambassador · publisher of THE AI DISPATCH · published AI researcher.</p></div>
+        </div>
+        <div class="dual-item">
+          <span class="dual-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7z"/></svg></span>
+          <div><h4>UBS LeadX</h4><p>Director→Executive-Director acceleration track · APAC LeadX Challenge award.</p></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERTISE ================= -->
+<section class="sec-pad" id="expertise" style="background:linear-gradient(180deg,transparent,var(--ink-2),transparent)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag"><span class="num">03</span> Core Expertise</div>
+      <h2 class="sec-title">Where strategy, <em>AI and governance</em> meet delivery.</h2>
+    </div>
+    <div class="exp-grid">
+      <div class="exp-card reveal">
+        <span class="exp-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12l9-9 9 9M5 10v10h14V10"/><path d="M9 21v-6h6v6"/></svg></span>
+        <h3>Strategy &amp; Operating Model</h3>
+        <p>Enterprise Data &amp; AI strategy, technology vision &amp; roadmap, operating-model re-engineering, post-merger integration, P&amp;L and investment decisioning.</p>
+      </div>
+      <div class="exp-card reveal d1">
+        <span class="exp-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></span>
+        <h3>Agentic &amp; Applied AI</h3>
+        <p>AI agents &amp; agent-factory standards, LLM orchestration, RAG, function calling, fine-tuning, model-agnostic platform design, AI explainability.</p>
+      </div>
+      <div class="exp-card reveal d2">
+        <span class="exp-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <h3>AI Governance &amp; Model Risk</h3>
+        <p>SR 11-7 model-risk management, evaluation &amp; quality gates, responsible &amp; explainable AI, human-in-the-loop review, audit traceability.</p>
+      </div>
+      <div class="exp-card reveal">
+        <span class="exp-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
+        <h3>Architecture &amp; Platforms</h3>
+        <p>Solution &amp; enterprise architecture, domain-driven design, event-driven microservices, NFR engineering, cloud across Azure / AWS / GCP.</p>
+      </div>
+      <div class="exp-card reveal d1">
+        <span class="exp-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 5-6"/></svg></span>
+        <h3>Regulatory &amp; Risk Domain</h3>
+        <p>Basel III / B3F, IFRS, capital &amp; credit-risk reporting, SOX &amp; operational controls, GDPR and privacy-by-design, audit-ready pipelines.</p>
+      </div>
+      <div class="exp-card reveal d2">
+        <span class="exp-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.4"/><path d="M3 20c0-3 2.7-5 6-5s6 2 6 5M15 20c0-2 1-3.4 3-3.4s3 1.4 3 3.4"/></svg></span>
+        <h3>Leadership &amp; Org Design</h3>
+        <p>Global team leadership across 3 regions, C-suite advisory &amp; governance, capability building, high-performance developer pods, and diversity, inclusion &amp; culture leadership.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="sec-pad" id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag"><span class="num">04</span> Skills &amp; Stack</div>
+      <h2 class="sec-title">The <em>toolbox</em> behind the outcomes.</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group reveal"><h3>Languages</h3><div class="chips"><span>Python</span><span>SQL</span><span>JavaScript</span><span>VBA</span><span>HTML</span><span>CSS</span><span>XML</span></div></div>
+      <div class="skill-group reveal d1"><h3>Data Engineering &amp; Big Data</h3><div class="chips"><span>Spark</span><span>Kafka</span><span>Databricks</span><span>HDFS</span><span>Hive</span><span>HBase</span><span>Sqoop</span><span>Flink</span><span>ETL</span></div></div>
+      <div class="skill-group reveal d2"><h3>AI · ML · Generative AI</h3><div class="chips"><span>scikit-learn</span><span>TensorFlow</span><span>PyTorch</span><span>Transformers</span><span>Deep Learning</span><span>NLP</span><span>LangChain</span><span>OpenAI API</span><span>Claude API</span><span>RAG</span><span>Prompt Engineering</span><span>Function Calling</span><span>Fine-tuning</span><span>Agentic AI</span></div></div>
+      <div class="skill-group reveal"><h3>Vector &amp; Data Stores</h3><div class="chips"><span>Chroma</span><span>Pinecone</span><span>FAISS</span><span>PostgreSQL</span><span>pgvector</span></div></div>
+      <div class="skill-group reveal d1"><h3>Cloud &amp; DevOps</h3><div class="chips"><span>Azure</span><span>AWS</span><span>GCP</span><span>Docker</span><span>Kubernetes</span><span>GitLab CI/CD</span><span>Jenkins</span><span>Bitbucket</span><span>Ansible</span><span>Control-M</span><span>SonarQube</span><span>Splunk</span></div></div>
+      <div class="skill-group reveal d2"><h3>Data, BI &amp; Visualization</h3><div class="chips"><span>Power BI</span><span>Tableau</span><span>Qlik</span><span>Business Objects</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span><span>Plotly</span></div></div>
+      <div class="skill-group reveal"><h3>Governance, Automation &amp; Tooling</h3><div class="chips"><span>Collibra</span><span>ServiceNow</span><span>Blue Prism RPA</span><span>Zapier</span><span>JIRA</span><span>Confluence</span><span>Claude Code</span><span>Oracle Financials 11i</span><span>HOGAN</span><span>IMEX</span></div></div>
+      <div class="skill-group reveal d1"><h3>Architecture &amp; Delivery</h3><div class="chips"><span>Enterprise Architecture</span><span>Domain-Driven Design</span><span>Event-Driven</span><span>Microservices</span><span>TOGAF</span><span>SAFe</span><span>Agile / DevOps</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VENTURES ================= -->
+<section class="sec-pad" id="ventures">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag"><span class="num">05</span> Agentic AI Projects · The Agent Factory</div>
+      <h2 class="sec-title">Five agentic AI platforms, <em>built and shipped</em>.</h2>
+      <p class="sec-sub">A portfolio built on an internal LLM under common standards and reference patterns, compressing requirement-to-delivery up to 10× and replacing status reporting with live, KPI-governed execution.</p>
+    </div>
+    <div class="ventures">
+      <article class="venture reveal">
+        <div class="v-mono">St</div>
+        <div class="v-body">
+          <h3>Strata <span class="v-kind">Planning &amp; Gantt</span></h3>
+          <p>A self-contained enterprise planning tool. Interactive Gantt with drag-to-schedule, dependencies, critical-path (CPM), baselines, hierarchy and conditional colouring, with role-based access and a full audit trail.</p>
+          <div class="v-tags"><span>React + Vite</span><span>Node / Express</span><span>Critical Path</span><span>JWT / RBAC</span><span>CSV / Excel</span></div>
+        </div>
+        <span class="v-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+      </article>
+
+      <article class="venture reveal">
+        <div class="v-mono">Sg</div>
+        <div class="v-body">
+          <h3>SkillGPS <span class="v-kind">Skills Intelligence</span></h3>
+          <p>An AI skills-intelligence platform that infers skills from people's <i>actual work</i> (commits, PRs, tickets), each with a quoted evidence snippet, then blends five trust signals into an organisation-wide Trust Index for succession, planning and a talent marketplace.</p>
+          <div class="v-tags"><span>Claude Opus 4.8</span><span>Evidence Inference</span><span>Multi-Signal Trust</span><span>Workforce Planning</span><span>Privacy-first</span></div>
+        </div>
+        <span class="v-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+      </article>
+
+      <article class="venture reveal">
+        <div class="v-mono">Es</div>
+        <div class="v-body">
+          <h3>Estimaite <span class="v-kind">Agile AI Estimator</span></h3>
+          <p>Turns a user story, or a Jira / GitLab issue, into a consistent T-shirt size, story points, effort and cost split across Dev &amp; QA on real blended rates. Estimate with AI, full-manual, or Planning Poker; the model self-calibrates as actuals land. Five-level org hierarchy with banking-grade scope isolation.</p>
+          <div class="v-tags"><span>AI Estimation</span><span>Planning Poker</span><span>Self-calibrating</span><span>Org Hierarchy</span><span>Cost Modelling</span></div>
+        </div>
+        <span class="v-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+      </article>
+
+
+      <article class="venture reveal">
+        <div class="v-mono">Cr</div>
+        <div class="v-body">
+          <h3>Crucible <span class="v-kind">Requirement-to-Automation</span></h3>
+          <p>Turns GitLab requirements into reviewed test automation end-to-end: score requirement quality (gate), generate test approach, design &amp; cases, read the automation repo, generate Cucumber / Selenium code and open a PR. Every step calls the bank-wide LLM through a configurable adapter; nothing auto-merges, everything is audited.</p>
+          <div class="v-tags"><span>Java 21 / Spring Boot</span><span>pgvector</span><span>Cucumber / Selenium</span><span>Quality Gate</span><span>Auditable</span></div>
+        </div>
+        <span class="v-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+      </article>
+
+      <article class="venture reveal">
+        <div class="v-mono">Aq</div>
+        <div class="v-body">
+          <h3>AgileIQ <span class="v-kind">Delivery Intelligence</span></h3>
+          <p>An event-sourced delivery-analytics platform that reconstructs flow from an immutable event log (lead/cycle time, WIP, flow efficiency, velocity, iteration health and 14 Pulse measures), with Monte Carlo forecasting and a read-only agentic AI layer for Ask, requirement quality and insights. Delivery run against KPIs, not decks.</p>
+          <div class="v-tags"><span>Next.js 14</span><span>Event Sourcing</span><span>Monte Carlo</span><span>Claude Opus 4.8</span><span>Prisma</span></div>
+        </div>
+        <span class="v-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HACKATHON ================= -->
+<section class="sec-pad" id="hackathon">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag"><span class="num">06</span> Hackathon</div>
+      <h2 class="sec-title">Building, and <em>judging</em>, under pressure.</h2>
+    </div>
+    <div class="hack-card lead reveal" style="margin-bottom:26px">
+      <span class="badge">Recognition</span>
+      <div class="big">2&times;</div>
+      <h3>Panel Judge, <em>UBS Hackathon</em></h3>
+      <p>Invited onto the judging panel for two consecutive years, evaluating teams on innovation, technical depth and business impact.</p>
+    </div>
+    <div class="proj-disc reveal">Builds &amp; Challenges</div>
+    <div class="proj-grid">
+      <a href="https://github.com/ashish-vxii76/Hackathon-PortfolioAnalysis" target="_blank" rel="noopener" class="proj-card has-repo reveal">
+        <div class="proj-top"><span class="proj-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 5-6"/></svg></span><span class="proj-cat">Repo</span></div>
+        <h3>Portfolio Analysis</h3>
+        <p>Analyses investment portfolios, turning raw holdings into clear, decision-ready insight.</p>
+        <div class="proj-tags"><span>Python</span><span>Pandas</span><span>Financial Analytics</span></div>
+        <span class="proj-repo"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg> View repository</span>
+      </a>
+      <article class="proj-card reveal d1">
+        <div class="proj-top"><span class="proj-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 17l6-6 4 4 8-9"/><path d="M16 6h5v5"/></svg></span><span class="proj-cat">UBS Business Challenge</span></div>
+        <h3>FX Volume Forecasting</h3>
+        <p>Time-series predictive models and real-time ingestion to forecast FX volumes for investment-scenario planning.</p>
+        <div class="proj-tags"><span>Time-Series</span><span>Forecasting</span><span>Python</span></div>
+      </article>
+      <article class="proj-card reveal d2">
+        <div class="proj-top"><span class="proj-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 5-6"/></svg></span><span class="proj-cat">UBS Global Hackathon</span></div>
+        <h3>AI Trading Strategies</h3>
+        <p>Automated data sourcing and ticker validation, with Regression, Random Forest, Markowitz Optimization and LSTM for market-value forecasting.</p>
+        <div class="proj-tags"><span>Random Forest</span><span>LSTM</span><span>Markowitz</span><span>Regression</span></div>
+      </article>
+      <article class="proj-card reveal d3">
+        <div class="proj-top"><span class="proj-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.7-.8L3 21l1.9-5.3A8.38 8.38 0 0 1 4 11.5 8.5 8.5 0 0 1 12.5 3 8.38 8.38 0 0 1 21 11.5z"/></svg></span><span class="proj-cat">Data Science Guild</span></div>
+        <h3>RAG Insurance Assistant</h3>
+        <p>A retrieval-augmented pipeline enabling real-time policy-document comprehension and contextual Q&amp;A.</p>
+        <div class="proj-tags"><span>RAG</span><span>LLM</span><span>Retrieval</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="sec-pad" id="experience" style="background:linear-gradient(180deg,transparent,var(--ink-2),transparent)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag"><span class="num">07</span> Executive Experience</div>
+      <h2 class="sec-title">25+ years across <em>tier-one global banks</em>.</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-period">Oct 2017 – Present</div>
+        <div class="tl-role">Chief Data &amp; AI Architect · Engineering Director · Innovation &amp; AI Lead · India Regional Lead</div>
+        <div class="tl-co">UBS Business Solutions India <span>· Pune</span></div>
+        <div class="tl-roles"><b>Portfolio progression:</b> GCRG (current) · ESG &amp; Regulatory · Capital Analytics · Finance Technology, heritage Credit Suisse.</div>
+        <p>Own architecture, delivery and investment decisioning for the Group Compliance &amp; Operational-Risk technology portfolio, a $100M+ book serving global banking functions, directing 100+ engineers (50+ direct) across AMER, EMEA and APAC. Set technical and AI strategy as Chief Data &amp; AI Architect, carry funding and prioritisation through Group-level executive governance, and lead the AI adoption agenda for delivery. <i>(Earlier in tenure: owned the capital-analytics portfolio through the Credit Suisse to UBS integration.)</i></p>
+        <div class="tl-group">Strategy &amp; AI-Native Platforms</div>
+        <ul>
+          <li>Set and executed an <b>AI-native delivery strategy</b>: built a portfolio of five platforms on the bank's internal LLM (agentic test engineering, estimation, skills intelligence, delivery analytics, planning) that compress requirement-to-delivery up to <b>10×</b> and replace status reporting with live, KPI-governed execution.</li>
+          <li>Stood up <b>event-sourced delivery analytics</b> that rebuild flow, velocity and 14 execution measures from an immutable event timeline, with Monte Carlo forecasting and an automated quality gate, enabling delivery to be run against KPIs rather than decks.</li>
+          <li>Embedded <b>SR 11-7-ready AI governance</b> across the platform estate (rule-based, explainable scoring; RBAC and MFA; full traceability to merged PR), making agentic delivery audit-defensible by design.</li>
+        </ul>
+        <div class="tl-group">Capital, Regulatory &amp; Risk Delivery</div>
+        <ul>
+          <li>Unlocked <b>CHF 6Bn in regulatory capital</b> and CHF 8M TCO by re-engineering Basel III front-to-back capital and RWA reporting across Pillar 1 and Pillar 3.</li>
+          <li>Delivered <b>100% SOX and GDPR audit success</b> across 200+ applications with zero material findings across EY, PwC and KPMG; cleared a long-standing regulatory deferral backlog to continuous compliance.</li>
+          <li>Modernised the capital calculation stack onto Spark / Kafka / HDFS, enabling real-time RWA computation and cutting submission cycles <b>70%</b>; delivered single <b>FINMA B3F</b> reporting on the UBS Azure Data Lake with federated lineage.</li>
+          <li>Extended the Spark-based capital-calculation and analytics pipelines to enable <b>stress testing and scenario modelling</b>, supporting sensitivity analysis, credit-risk steering and regulatory disclosures under adverse scenarios.</li>
+          <li>Delivered <b>Section 166 PRA</b> capital and RWA reporting (Oracle DWH, HDFS &amp; Spark calculations, OBIEE/Axiom output) with a <b>100% audit pass</b> through an executive transition.</li>
+          <li>Implemented <b>IFRS 9, 15 and 16</b> across CS finance systems with a new Leases engine, PSFT workflows and dual-book validation, delivering end-to-end reporting with <b>zero audit gaps</b>.</li>
+          <li>Orchestrated an <b>IFRS-first migration</b> across Credit Suisse capital systems, positioning GAAP as the secondary standard and aligning reporting to UBS frameworks in Axiom and Power BI.</li>
+        </ul>
+        <div class="tl-group">Post-Merger Integration &amp; Cost Transformation</div>
+        <ul>
+          <li>Removed <b>CHF 11M+ in annual run-cost</b> by consolidating post-merger platforms, rebuilding CI/CD under DevSecOps and decommissioning 200+ servers and 1,000+ feeds, completing the Credit Suisse to UBS integration <b>6 to 9 months ahead</b> of the enterprise timeline.</li>
+          <li>Migrated 1,000+ OBIEE/Qlik reports to Power BI, decommissioned 5,000+ dashboards and cut license usage 25% year on year through telemetry-led phasing.</li>
+          <li>Delivered <b>Accelerated Close</b> for Capital Reporting (−5 days per cycle), decoupled the CUSO and Brazil entities onto the UBS-native stack (CHF 500K+ saved), and automated FINREP and forecast workflows via governed Python-Spark pipelines.</li>
+        </ul>
+        <div class="tl-group">Cloud &amp; Data Platform Modernisation</div>
+        <ul>
+          <li>Rebuilt Sienna→MDS ingestion with embedded quality and lineage validation, unlocking <b>CHF 200M in RWA uplift</b> and CHF 960K in savings.</li>
+          <li>Modernised critical data infrastructure, migrating <b>12 apps and 90 tenants from Cloudera CDH to CDP</b> and upgrading Oracle 11i to 19c, retiring unsupported technology and its security risk.</li>
+          <li>Automated capital-disclosure updates with <b>Blue Prism</b> bots (exception handling and approval gates), removing manual inputs and saving <b>CHF 300K annually</b>.</li>
+        </ul>
+        <div class="tl-group">Data Privacy &amp; Protection</div>
+        <ul>
+          <li>Partnered with <b>Legal, Risk and CISO</b> to embed privacy mandates and control attestations into engineering workflows and regulatory submissions, keeping delivery audit-ready by design.</li>
+          <li>Automated Agile KPI dashboards and <b>ICEDQ-based regression testing</b>, removing manual reconciliation and saving <b>CHF 300K annually</b> across governance and release workflows.</li>
+        </ul>
+        <div class="tl-group">Engineering Transformation &amp; Organisation</div>
+        <ul>
+          <li>Lifted engineering throughput <b>~5×</b>, raising sprint throughput from 10-12 to 60 story points and cutting delivery cycle time from 10 days to 2, by re-architecting the delivery model onto developer pods and AI-enabled automation.</li>
+          <li>Lead a global organisation of <b>50+ direct reports and 40+ aligned engineers</b>, embedding role-based ownership, coaching frameworks and execution standards to build high-performance teams.</li>
+        </ul>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-period">Jul 2013 – Oct 2017</div>
+        <div class="tl-role">Vice President, Engineering Lead · Barclays International</div>
+        <div class="tl-co">Barclays Technology Centre India <span>· Pune</span></div>
+        <p>Led engineering strategy and regulatory modernisation for Barclays International across Investment Banking, Barclaycard and Corporate Banking, directing 100+ engineers across AMER, EMEA and APAC on multi-million-pound portfolios. Partnered with Legal, Risk, CISO and CTO to embed secure data handling and GDPR controls into delivery, aligned to global CIO mandates.</p>
+        <div class="tl-group">Strategic Execution &amp; Business Impact</div>
+        <ul>
+          <li>Re-engineered front-to-back <b>Prime Brokerage</b> flows (£1.5M programme), removing 40% of manual steps and enabling EMIR, MiFID II, Dodd-Frank, SFTR, Basel III, GDPR, SOX, BCBS 239 and Volcker compliance.</li>
+          <li>Led <b>£4M cross-jurisdiction APAC F&amp;O delivery</b>, cutting trade breaks 35% with 100% multi-regulatory compliance across 100+ change requests.</li>
+          <li>Delivered <b>100+ regulatory CRs for Exchange-Traded Derivatives</b> (Futures, Options, Forwards) using .NET, C# and Qlik, with predictive control frameworks and analytics dashboards that cut post-trade risk and prevented an estimated <b>$5M in regulatory fines</b>.</li>
+        </ul>
+        <div class="tl-group">Data Privacy &amp; Protection</div>
+        <ul>
+          <li>Founded and led the <b>Global Data Masking CoE</b>, growing it 5× (£400K → £2M) and delivering GDPR-compliant CRs in Informatica, standardising static, dynamic and on-demand masking.</li>
+          <li>Implemented GDPR- and SOX-aligned privacy controls across <b>1,200+ applications</b> with cross-border and IAM standards plus self-service onboarding and re-certification tooling, reducing regulatory exposure by <b>£11M</b>.</li>
+        </ul>
+        <div class="tl-group">Leadership, Agile &amp; DevOps</div>
+        <ul>
+          <li>Led the <b>re-org of Barclays International</b> onto shared platforms and tools, eliminating silos for a 22% staff-efficiency gain; defined the India tech roadmap aligned to global strategy, yielding <b>CHF 1.25M</b> in annual savings.</li>
+          <li>Rolled out enterprise Agile and DevOps (JIRA, TeamCity, Maven, Nolio), lifting delivery velocity <b>30%</b>, code quality 28% and cutting processing time 90%, saving <b>$2M</b> in operational overhead.</li>
+        </ul>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-period">Jul 2011 – Jul 2013</div>
+        <div class="tl-role">Global IO Capability &amp; Program Control Services Manager</div>
+        <div class="tl-co">Accenture <span>· Pune</span></div>
+        <p>Grew the Program Control Services business and built out global infrastructure-outsourcing capability.</p>
+        <ul>
+          <li>Expanded the Program Control Services business through presales, winning high-value contracts with <b>Siemens, Mercedes-Benz, Volkswagen, Harman Kardon, JBL and Vodafone</b> and positioning Accenture as a strategic delivery partner across industries.</li>
+          <li>Built and matured <b>13+ Infrastructure Outsourcing Services capabilities</b>, shaping the global service catalogue against industry benchmarks and roadmap planning.</li>
+        </ul>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-period">Sep 2008 – Jul 2011</div>
+        <div class="tl-role">Technology Program / Project Manager</div>
+        <div class="tl-co">Amdocs <span>· Pune</span></div>
+        <p>Led distributed delivery for a global telecom account across seven countries.</p>
+        <ul>
+          <li>Secured a <b>$125M multi-year contract</b> by turning around an at-risk global telecom account; grew project margin from <b>0% to 15%</b> and revenue 40% over three years while cutting delivery cost 28%.</li>
+          <li>Delivered end-to-end Amdocs 7.x implementations for <b>Vodafone, Telstra, Bell Canada, Sprint, Rogers, Maxis and Astro</b>, leading distributed teams across seven countries.</li>
+        </ul>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-period">1997 – 2008</div>
+        <div class="tl-role">Early Career · UI/UX Design, Enterprise Apps &amp; Banking Delivery</div>
+        <div class="tl-co">HSBC Software Development · Scope International · Standard Chartered Bank · Zap Infotech <span>· Pune / Mumbai</span></div>
+        <p>Progressive delivery and engineering roles building the foundation in enterprise banking technology, beginning as a <b>Business Analyst &amp; UI/UX Designer</b> at Zap Infotech, an early grounding in design that still informs the creative practice.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AWARDS ================= -->
+<section class="sec-pad" id="awards">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag"><span class="num">08</span> Awards &amp; Recognition</div>
+      <h2 class="sec-title">Recognised for <em>impact and leadership</em>.</h2>
+    </div>
+    <div class="awards-grid">
+      <article class="award-card reveal">
+        <span class="award-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 15s-2 2-2 5c3 0 5-2 5-2M14.5 4.5C18 8 17 14 13 18l-4-4C13 10 11 5 14.5 4.5z"/><circle cx="14.5" cy="9.5" r="1.5"/></svg></span>
+        <div><h3>UBS LeadX</h3><p>Director to Executive-Director acceleration · APAC LeadX Challenge award</p></div>
+      </article>
+      <article class="award-card reveal">
+        <span class="award-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2l3 7h7l-5.5 4.5L18.5 22 12 17.5 5.5 22l2-8.5L2 9h7z"/></svg></span>
+        <div><h3>#1 in Data Science, Favikon</h3><p>Top-ranked AI &amp; engineering-leadership creator · Favikon Ambassador</p></div>
+      </article>
+      <article class="award-card reveal">
+        <span class="award-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>
+        <div><h3>Top 1% Global Creator, LinkedIn</h3><p>On AI &amp; engineering leadership · recognised Data &amp; AI influencer</p></div>
+      </article>
+      <article class="award-card reveal">
+        <span class="award-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="15" r="6"/><path d="M9 9L7 2M15 9l2-7M10.5 15h3"/></svg></span>
+        <div><h3>Kaggle Expert</h3><p>Competitions &amp; notebooks badge</p></div>
+      </article>
+      <article class="award-card reveal">
+        <span class="award-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="15" r="6"/><path d="M9 9L7 2M15 9l2-7M12 13v4M10.5 15h3" /></svg></span>
+        <div><h3>Top 300 Next-Gen Leaders</h3><p>UBS India · Deloitte Business Chemistry nominee</p></div>
+      </article>
+      <article class="award-card reveal">
+        <span class="award-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 21h8M12 17v4M6 4h12v5a6 6 0 0 1-12 0z"/><path d="M6 5H3v2a3 3 0 0 0 3 3M18 5h3v2a3 3 0 0 0-3 3"/></svg></span>
+        <div><h3>AI Champion, Core Team</h3><p>Driving AI adoption across delivery streams · UBS</p></div>
+      </article>
+      <article class="award-card reveal">
+        <span class="award-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 21h8M12 17v4M6 4h12v5a6 6 0 0 1-12 0z"/><path d="M6 5H3v2a3 3 0 0 0 3 3M18 5h3v2a3 3 0 0 0-3 3"/></svg></span>
+        <div><h3>Engineering Excellence &amp; APAC CIO Star</h3><p>UBS</p></div>
+      </article>
+      <article class="award-card reveal">
+        <span class="award-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="15" r="6"/><path d="M9 9L7 2M15 9l2-7M12 13v4M10.5 15h3" /></svg></span>
+        <div><h3>Best People Manager</h3><p>UBS</p></div>
+      </article>
+      <article class="award-card reveal">
+        <span class="award-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2l3 7h7l-5.5 4.5L18.5 22 12 17.5 5.5 22l2-8.5L2 9h7z"/></svg></span>
+        <div><h3>Carbon Success Award</h3><p>UBS</p></div>
+      </article>
+      <article class="award-card reveal">
+        <span class="award-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 21h8M12 17v4M6 4h12v5a6 6 0 0 1-12 0z"/><path d="M6 5H3v2a3 3 0 0 0 3 3M18 5h3v2a3 3 0 0 0-3 3"/></svg></span>
+        <div><h3>Outstanding Performer Award</h3><p>Global Lead, Data Masking CoE · Data Confidentiality &amp; GDPR programmes · Barclays</p></div>
+      </article>
+    </div>
+    <div id="recommendations">
+      <div class="proj-disc reveal">Recommendations</div>
+      <div class="rec-grid">
+      <article class="rec-card reveal">
+        <div class="qm">&ldquo;</div>
+        <blockquote>He has a rare mix of delivery discipline, technical depth, and genuine empathy… and he consistently turns high-pressure situations into predictable outcomes.</blockquote>
+        <div class="rec-author"><span class="rec-avatar">KM</span><div><div class="ra-name">Kapil Mashru</div><div class="ra-title">Senior Transformation &amp; Technology Leader · Ex-Credit Suisse &amp; UBS</div></div></div>
+        <a href="https://www.linkedin.com/in/ashish--joshi/details/recommendations/" target="_blank" rel="noopener" class="rec-link">Read on LinkedIn ↗</a>
+      </article>
+      <article class="rec-card reveal">
+        <div class="qm">&ldquo;</div>
+        <blockquote>His ability to set up and lead the global Data Masking CoE from India was truly impressive… exceptional problem-solving and decision-making, ensuring program success.</blockquote>
+        <div class="rec-author"><span class="rec-avatar">VA</span><div><div class="ra-name">Vivek Agrawal</div><div class="ra-title">India COO, GB&amp;M IT · HSBC</div></div></div>
+        <a href="https://www.linkedin.com/in/ashish--joshi/details/recommendations/" target="_blank" rel="noopener" class="rec-link">Read on LinkedIn ↗</a>
+      </article>
+      <article class="rec-card reveal">
+        <div class="qm">&ldquo;</div>
+        <blockquote>An exceptional leader in Data Engineering and Cloud Computing… managing portfolios exceeding $125M, delivering impactful results, often ahead of industry timelines.</blockquote>
+        <div class="rec-author"><span class="rec-avatar">GS</span><div><div class="ra-name">Giovanni Sisinna</div><div class="ra-title">Program Director · AI &amp; Digital Transformation</div></div></div>
+        <a href="https://www.linkedin.com/in/ashish--joshi/details/recommendations/" target="_blank" rel="noopener" class="rec-link">Read on LinkedIn ↗</a>
+      </article>
+      <article class="rec-card reveal">
+        <div class="qm">&ldquo;</div>
+        <blockquote>Ashish's unparalleled team leadership, methodical approach, and exceptional time management have consistently exceeded expectations… I endorse him wholeheartedly.</blockquote>
+        <div class="rec-author"><span class="rec-avatar">YS</span><div><div class="ra-name">Dr. Yogesh Shete</div><div class="ra-title">GCC &amp; Country Leadership · CXO &amp; Board Advisor</div></div></div>
+        <a href="https://www.linkedin.com/in/ashish--joshi/details/recommendations/" target="_blank" rel="noopener" class="rec-link">Read on LinkedIn ↗</a>
+      </article>
+      <article class="rec-card reveal">
+        <div class="qm">&ldquo;</div>
+        <blockquote>A remarkable line manager… his expertise in IT business strategy and digital transformations was crucial to delivering successful outcomes around Big Data and regulatory frameworks.</blockquote>
+        <div class="rec-author"><span class="rec-avatar">BR</span><div><div class="ra-name">Bhaskar Ray</div><div class="ra-title">Vice President · Citi</div></div></div>
+        <a href="https://www.linkedin.com/in/ashish--joshi/details/recommendations/" target="_blank" rel="noopener" class="rec-link">Read on LinkedIn ↗</a>
+      </article>
+      <article class="rec-card reveal">
+        <div class="qm">&ldquo;</div>
+        <blockquote>A leader, motivator and able to deliver global programs… able to withstand complex situations and articulate actionable, out-of-the-box ideas and solutions.</blockquote>
+        <div class="rec-author"><span class="rec-avatar">MM</span><div><div class="ra-name">Mahim Mishra</div><div class="ra-title">VP, Head of Channel Services · Prime Services</div></div></div>
+        <a href="https://www.linkedin.com/in/ashish--joshi/details/recommendations/" target="_blank" rel="noopener" class="rec-link">Read on LinkedIn ↗</a>
+      </article>
+      </div>
+      <div class="rec-band reveal" style="margin-top:20px">
+        <div class="rec-num">24</div>
+        <div class="rec-body">
+          <h3>Recommendations from leaders &amp; peers</h3>
+          <p>Two decades of colleagues, managers and partners across UBS, Credit Suisse and Barclays, endorsed on LinkedIn.</p>
+        </div>
+        <a href="https://www.linkedin.com/in/ashish--joshi/details/recommendations/" target="_blank" rel="noopener" class="btn btn-ghost">Read all 24 on LinkedIn
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESEARCH & PUBLICATIONS ================= -->
+<section class="sec-pad" id="research">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag"><span class="num">09</span> Research &amp; Publications</div>
+      <h2 class="sec-title">Peer-reviewed work in <em>applied AI</em>.</h2>
+    </div>
+
+    <div class="research-feat reveal">
+      <div class="rf-venue">
+        <span>MSc Thesis · Liverpool John Moores University</span>
+        <span>IEEE (submitted)</span>
+        <span>June 2026</span>
+      </div>
+      <h3>Early Stress Prediction from Wearable Physiological Signals: A Subject-Independent Comparative Deep-Learning Benchmark on the WESAD Dataset</h3>
+      <p class="rf-sum">
+        Reframes stress detection as <b>forecasting</b> rather than after-the-fact classification: given multimodal physiological signals up to time <i>t</i>, can a model predict the stress state at <i>t + k</i> for k of 30, 60 and 120 seconds? A fully reproducible pipeline over 15 WESAD subjects compares a Transformer, a 1-D CNN and an LSTM against a logistic-regression baseline under strict Leave-One-Subject-Out cross-validation, with paired significance testing and a modality ablation. The benchmark itself, a subject-independent, multi-horizon reference point, is the contribution.
+      </p>
+      <div class="rf-metrics">
+        <span>LSTM best mean F1 <b>0.5518</b></span>
+        <span>vs CNN <b>0.4291</b> · Transformer <b>0.2949</b></span>
+        <span><b>LOSO</b> cross-validation</span>
+        <span>Horizons <b>30 / 60 / 120s</b></span>
+        <span>Skin temperature <b>most predictive</b></span>
+        <span>p = 0.004, d-z = 0.90</span>
+      </div>
+      <div class="rf-links">
+        <a href="mailto:ashish.dataxai@gmail.com?subject=Request%3A%20Early%20Stress%20Prediction%20thesis%20%2F%20IEEE%20paper" class="rf-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          Full thesis &amp; IEEE paper available on request
+        </a>
+      </div>
+    </div>
+
+    <div class="wp-grid">
+      <div class="wp-card reveal">
+        <span class="wp-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 19.5V6a2 2 0 0 1 2-2h11a1 1 0 0 1 1 1v13M6 17h12v3H6a2 2 0 0 1 0-4z"/></svg></span>
+        <span class="badge">White Paper</span>
+        <h3>The Generative Shift</h3>
+        <p>An executive-level exploration of how generative AI is reshaping industries, work, creativity and everyday life, from sector case studies to the governance, talent and responsible-AI shifts leaders must make. We are not replacing humans; we are expanding what it means to be human.</p>
+        <div class="wp-links">
+          <a href="mailto:ashish.dataxai@gmail.com?subject=Request%3A%20The%20Generative%20Shift%20white%20paper" class="rf-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            Request access
+          </a>
+        </div>
+      </div>
+      <div class="wp-card reveal d1">
+        <span class="wp-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></span>
+        <span class="badge">White Paper</span>
+        <h3>Sentient Grid</h3>
+        <p>Redefining enterprise data, code and compliance through Agentic AI. A network of modular agents embedded across the data and software lifecycle, validating files and schema, honouring SLAs and contracts, auto-generating governance, tracing PRs to business rules, and self-healing on failure, turning fragmented data operations into a resilient, self-aware control plane.</p>
+        <p class="wp-meta">Co-authored with Pradnya Chavan and Aniruddha Bharule · Group Finance · Jun 2025</p>
+        <div class="wp-links">
+          <a href="mailto:ashish.dataxai@gmail.com?subject=Request%3A%20Sentient%20Grid%20white%20paper" class="rf-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            Request access
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AI & I FLAGSHIP ================= -->
+<section class="sec-pad" id="aii">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag"><span class="star">✦</span> Flagship Initiative</div>
+      <h2 class="sec-title">AI &amp; I, a <em>guided intelligence layer</em> for enterprise AI adoption.</h2>
+      <p class="sec-sub">An executive proposal that moves an organisation from fragmented AI usage to guided, measurable, collaborative adoption. A layer that sits above existing AI tools and helps people use AI better in the work they already do, because access is solved, but effective, role-aware use in the flow of work is not.</p>
+    </div>
+    <div class="aii-pillars">
+      <div class="aii-card reveal">
+        <div class="pnum">01</div>
+        <div class="pkind">Productivity Engine</div>
+        <h3>Personalised Insight</h3>
+        <p>Role-aware AI that learns how each person works and delivers contextual, next-best recommendations in-flow, so better outcomes don't require becoming a prompt engineer.</p>
+      </div>
+      <div class="aii-card reveal d1">
+        <div class="pnum">02</div>
+        <div class="pkind">Guided Improvement</div>
+        <h3>Adoption Intelligence</h3>
+        <p>Measures how well AI is actually used (not prompt counts), flags missed opportunities, and surfaces next-best actions. Coaching, not surveillance.</p>
+      </div>
+      <div class="aii-card reveal d2">
+        <div class="pnum">03</div>
+        <div class="pkind">Matchmaking Engine</div>
+        <h3>Discovery &amp; Reuse</h3>
+        <p>Connects work, ideas and people across teams, surfacing reusable pipelines, prompts, decisions and the experts who solved it before, so squads stop rebuilding what already exists.</p>
+      </div>
+    </div>
+    <div class="aii-band reveal">
+      <div class="aii-metrics">
+        <div class="m"><b>~$725K</b><span>to build, full feature set</span></div>
+        <div class="m"><b>~M10</b><span>cumulative break-even</span></div>
+        <div class="m"><b>15–25%</b><span>productivity gain</span></div>
+        <div class="m"><b>30–50%</b><span>duplication reduction</span></div>
+        <div class="m"><b>2–3×</b><span>faster proficiency</span></div>
+        <div class="m"><b>~6 mo</b><span>pilot-first delivery</span></div>
+      </div>
+      <div class="aii-cta">
+        <h4>The ask: run a scoped pilot.</h4>
+        <p>2–3 squads with visible AI friction. Prove the value on evidence, then scale. Built custom on the in-house LLM (Nucleus consumed), governed, evaluated and bounded by RBAC.</p>
+        <a href="mailto:ashish.dataxai@gmail.com?subject=Request%3A%20AI%20%26%20I%20executive%20deck" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          Request the executive deck
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VOICE ================= -->
+<section class="sec-pad" id="voice">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag"><span class="num">10</span> Brand &amp; Thought Leadership</div>
+      <h2 class="sec-title">A recognised <em>external voice</em> in AI.</h2>
+    </div>
+    <div class="voice-grid">
+      <a class="voice-card vc-rank reveal" href="https://creator.favikon.com/profile/66f7a7b34f9661208cdc3115/social-coverage/" target="_blank" rel="noopener">
+        <span class="badge">Favikon Ranking</span>
+        <div class="big">#1</div>
+        <h3 style="margin-top:14px">in <em>Data Science</em></h3>
+        <p>Top-ranked LinkedIn creator on AI and engineering leadership and a Top 1% global creator, selected into the Favikon Ambassador programme.</p>
+        <span class="fav-link">View Favikon profile &#8599;</span>
+      </a>
+      <div class="voice-card vc-news reveal d1">
+        <span class="badge">Publication</span>
+        <h3><em>THE AI DISPATCH</em>: a newsletter on the generative shift.</h3>
+        <p>Publisher of THE AI DISPATCH and white papers translating enterprise AI for senior business and risk audiences.</p>
+        <div class="pubs"><span>The Generative Shift</span><span>Sentient Grid</span><span>White Papers</span></div>
+        <a href="https://www.linkedin.com/in/ashish--joshi/" target="_blank" rel="noopener" class="follow-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"/></svg>
+          Follow on LinkedIn for AI insights
+        </a>
+      </div>
+      <div class="voice-card vc-book reveal d1">
+        <span class="badge">Practitioner Brand</span>
+        <h3>An enterprise <em>AI leader</em>, and a working fashion photographer.</h3>
+        <p>A deliberate dual-practitioner brand bridging technical depth and creative communication, equally at home in an architecture review and behind a camera.</p>
+      </div>
+      <div class="voice-card vc-creator reveal">
+        <span class="badge">Recognition</span>
+        <h3>UBS <em>LeadX</em></h3>
+        <p>Director→Executive-Director acceleration track · APAC LeadX Challenge award · Top 300 Next-Gen Leaders · AI Champion Core Team · APAC CIO Star.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section class="sec-pad" id="education" style="background:linear-gradient(180deg,transparent,var(--ink-2),transparent)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag"><span class="num">11</span> Education &amp; Credentials</div>
+      <h2 class="sec-title">Grounded in <em>formal AI study</em> &amp; certification.</h2>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card reveal"><span class="edu-yr">2025–26</span><div><h3>MSc, Artificial Intelligence &amp; Machine Learning</h3><p>Liverpool John Moores University. Comparative deep-learning evaluation on wearable physiological signals.</p></div></div>
+      <div class="edu-card reveal d1"><span class="edu-yr">2024–25</span><div><h3>Executive PG, Machine Learning &amp; AI (Gen AI)</h3><p>IIIT Bangalore · CGPA 3.7 / 4.0.</p></div></div>
+      <div class="edu-card reveal"><span class="edu-yr">1999–01</span><div><h3>PGDBA, Systems &amp; Operations</h3><p>IES MCRC · Gold Medallist.</p></div></div>
+      <div class="edu-card reveal d1"><span class="edu-yr">1994–97</span><div><h3>B.Sc, Chemistry</h3><p>Mumbai University.</p></div></div>
+    </div>
+    <div class="certs reveal" id="certifications">
+      <span class="lab">Certifications</span>
+      <div class="certs-list">
+        <span>PMP</span><span>SAFe Agilist</span><span>PAL(I)</span><span>CSSGB</span><span>ITIL</span>
+        <span>AWS Practitioner</span><span>Databricks Gen AI &amp; Lakehouse</span><span>TOGAF 9.2 L1</span><span>Gen AI for PMs</span><span>CA Clarity</span><span>Oracle 11i</span>
+      </div>
+    </div>
+    <div class="certs reveal" id="workshops" style="margin-top:22px">
+      <span class="lab">Trainings &amp; Workshops</span>
+      <div class="train-row"><span class="train-cat">Technical</span><div class="certs-list"><span>Gen AI &amp; Intelligent Agents</span><span>Databricks for Data Engineering</span><span>Azure AZ-900 Bootcamp</span><span>Apache Spark</span><span>System Design &amp; Software Architecture</span><span>Databricks Lakehouse Fundamentals</span><span>Generative AI</span><span>TOGAF 9.2 Level 1</span><span>Qlik Sense Foundation</span><span>Python</span><span>Big Data</span><span>Google Cloud Platform</span><span>AWS</span><span>Blockchain &amp; Cryptocurrency</span></div></div>
+      <div class="train-row"><span class="train-cat">Leadership</span><div class="certs-list"><span>Conscious Leadership</span><span>Business Chemistry</span><span>Databricks for Business Leaders</span><span>GCP for Leadership</span><span>Design Thinking (UI/UX)</span><span>SAFe Agilist</span><span>Professional Agile Leadership</span><span>Digital Transformation for Leaders</span><span>Scaled Agile Leadership</span><span>RPA &amp; AI for Leaders</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MASTERS PROJECTS ================= -->
+<section class="sec-pad" id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag"><span class="num">12</span> Masters Projects</div>
+      <h2 class="sec-title">Applied AI, <em>built end to end</em>.</h2>
+      <p class="sec-sub">A hands-on portfolio from the MSc and Executive PG programmes, spanning generative AI, NLP, deep learning, classical machine learning and analytics.</p>
+    </div>
+
+    <div class="proj-disc reveal">Generative &amp; Agentic AI</div>
+    <div class="proj-grid">
+      <article class="proj-card reveal">
+        <div class="proj-top">
+          <span class="proj-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.7-.8L3 21l1.9-5.3A8.38 8.38 0 0 1 4 11.5 8.5 8.5 0 0 1 12.5 3 8.38 8.38 0 0 1 21 11.5z"/></svg></span>
+          <span class="proj-cat">RAG Assistant</span>
+        </div>
+        <h3>Mr.HelpMateAI</h3>
+        <p>A retrieval-augmented insurance assistant that answers policy questions grounded in source documents.</p>
+        <div class="proj-tags"><span>Python</span><span>LangChain</span><span>ChromaDB</span><span>OpenAI</span></div>
+      </article>
+      <article class="proj-card reveal d1">
+        <div class="proj-top">
+          <span class="proj-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.7-.8L3 21l1.9-5.3A8.38 8.38 0 0 1 4 11.5 8.5 8.5 0 0 1 12.5 3 8.38 8.38 0 0 1 21 11.5z"/></svg></span>
+          <span class="proj-cat">Recommendation Bot</span>
+        </div>
+        <h3>ShopAssistAI</h3>
+        <p>A conversational agent that recommends laptops by understanding a user's needs and budget.</p>
+        <div class="proj-tags"><span>Python</span><span>OpenAI</span><span>Function Calling</span></div>
+      </article>
+      <article class="proj-card reveal d2">
+        <div class="proj-top">
+          <span class="proj-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.7-.8L3 21l1.9-5.3A8.38 8.38 0 0 1 4 11.5 8.5 8.5 0 0 1 12.5 3 8.38 8.38 0 0 1 21 11.5z"/></svg></span>
+          <span class="proj-cat">LLM Agent</span>
+        </div>
+        <h3>Semantic Spotter</h3>
+        <p>An email summarization agent that distils long threads into their essential points.</p>
+        <div class="proj-tags"><span>Python</span><span>LangChain</span><span>LlamaIndex</span><span>RAG</span></div>
+      </article>
+    </div>
+
+    <div class="proj-disc reveal">Natural Language Processing</div>
+    <div class="proj-grid">
+      <article class="proj-card reveal">
+        <div class="proj-top">
+          <span class="proj-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7h16M4 12h10M4 17h7"/></svg></span>
+          <span class="proj-cat">Text Classification</span>
+        </div>
+        <h3>Automatic Ticket Classification</h3>
+        <p>Routes incoming support tickets to the right team by classifying their text.</p>
+        <div class="proj-tags"><span>Python</span><span>NLP</span><span>scikit-learn</span><span>NMF</span></div>
+      </article>
+      <article class="proj-card reveal d1">
+        <div class="proj-top">
+          <span class="proj-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 8h10M7 12h6"/><rect x="3" y="4" width="18" height="16" rx="2"/></svg></span>
+          <span class="proj-cat">Named Entity Recognition</span>
+        </div>
+        <h3>Healthcare Entity Recognition</h3>
+        <p>Extracts diseases, treatments and other clinical entities from medical text.</p>
+        <div class="proj-tags"><span>Python</span><span>spaCy</span><span>CRF</span><span>NER</span></div>
+      </article>
+    </div>
+
+    <div class="proj-disc reveal">Deep Learning · Computer Vision</div>
+    <div class="proj-grid">
+      <a href="https://github.com/ashish-vxii76/Melanoma-Classification-Using-Custom-CNN" target="_blank" rel="noopener" class="proj-card has-repo reveal">
+        <div class="proj-top">
+          <span class="proj-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></span>
+          <span class="proj-cat">CNN</span>
+        </div>
+        <h3>Melanoma Detection</h3>
+        <p>A convolutional network that classifies skin lesions to flag melanoma from images.</p>
+        <div class="proj-tags"><span>TensorFlow</span><span>Keras</span><span>CNN</span><span>Augmentation</span></div>
+        <span class="proj-repo"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg> View repository</span>
+      </a>
+      <a href="https://github.com/ashish-vxii76/Gesture-Recognition" target="_blank" rel="noopener" class="proj-card has-repo reveal d1">
+        <div class="proj-top">
+          <span class="proj-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 13l2 2 5-5"/><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M9 21h6"/></svg></span>
+          <span class="proj-cat">CNN</span>
+        </div>
+        <h3>Smart TV Gesture Recognition</h3>
+        <p>Recognises hand gestures from video to control a smart TV without a remote.</p>
+        <div class="proj-tags"><span>TensorFlow</span><span>Keras</span><span>Conv3D</span><span>CNN-LSTM</span></div>
+        <span class="proj-repo"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg> View repository</span>
+      </a>
+    </div>
+
+    <div class="proj-disc reveal">Machine Learning &amp; Analytics</div>
+    <div class="proj-grid">
+      <article class="proj-card reveal">
+        <div class="proj-top">
+          <span class="proj-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <span class="proj-cat">Capstone</span>
+        </div>
+        <h3>Credit Card Fraud Detection</h3>
+        <p>Detects fraudulent transactions on highly imbalanced data. The programme capstone.</p>
+        <div class="proj-tags"><span>Python</span><span>scikit-learn</span><span>XGBoost</span><span>SMOTE</span></div>
+      </article>
+      <a href="https://github.com/ashish-vxii76/Telecom-Churn" target="_blank" rel="noopener" class="proj-card has-repo reveal d1">
+        <div class="proj-top">
+          <span class="proj-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 5-6"/></svg></span>
+          <span class="proj-cat">Supervised ML</span>
+        </div>
+        <h3>Telecom Churn Prediction</h3>
+        <p>Predicts which telecom customers are most likely to churn, and why.</p>
+        <div class="proj-tags"><span>Python</span><span>scikit-learn</span><span>Logistic Reg.</span><span>PCA</span></div>
+        <span class="proj-repo"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg> View repository</span>
+      </a>
+      <a href="https://github.com/ashish-vxii76/BikeSharing_MultiLinearRegression" target="_blank" rel="noopener" class="proj-card has-repo reveal d2">
+        <div class="proj-top">
+          <span class="proj-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 3v18h18"/><path d="M7 13l3 3 7-8"/></svg></span>
+          <span class="proj-cat">Supervised ML</span>
+        </div>
+        <h3>Bike Demand Forecasting</h3>
+        <p>Forecasts daily bike-rental demand from seasonal, weather and calendar signals.</p>
+        <div class="proj-tags"><span>Python</span><span>Linear Reg.</span><span>statsmodels</span></div>
+        <span class="proj-repo"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg> View repository</span>
+      </a>
+      <a href="https://github.com/ashish-vxii76/LendingClub_CaseStudy" target="_blank" rel="noopener" class="proj-card has-repo reveal d3">
+        <div class="proj-top">
+          <span class="proj-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+          <span class="proj-cat">Analytics · EDA</span>
+        </div>
+        <h3>Loan Risk Modelling</h3>
+        <p>Exploratory analysis surfacing the key drivers of credit and lending risk.</p>
+        <div class="proj-tags"><span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span></div>
+        <span class="proj-repo"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg> View repository</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <div class="aurora"><div class="blob b1"></div><div class="blob b2"></div></div>
+  <div class="wrap">
+    <h2 class="reveal">Let's build the <em>agentic future</em>.</h2>
+    <p class="lede reveal d1">Advisory, leadership, speaking, or a conversation about enterprise AI. I'd be glad to connect.</p>
+    <div class="contact-cta reveal d2">
+      <a href="https://www.linkedin.com/in/ashish--joshi/" target="_blank" rel="noopener" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"/></svg>
+        Connect on LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap foot">
+    <p>© <span id="year"></span> Ashish Joshi · Data &amp; AI Executive. All rights reserved.</p>
+    <div class="fsoc">
+      <a href="https://www.linkedin.com/in/ashish--joshi" target="_blank">LinkedIn</a>
+      <a href="https://github.com/ashish-vxii76" target="_blank">GitHub</a>
+      <a href="mailto:ashish.dataxai@gmail.com">Email</a>
+      <a href="assets/Ashish-Joshi-CV.pdf" target="_blank">CV</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ---- year ----
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // ---- light deterrent: discourage casual save/drag of the portrait ----
+  document.querySelectorAll('img').forEach(img=>{
+    img.addEventListener('contextmenu', e=>e.preventDefault());
+    img.addEventListener('dragstart', e=>e.preventDefault());
+    img.setAttribute('draggable','false');
+  });
+
+  // ---- header scroll state + progress bar ----
+  const header = document.getElementById('header');
+  const progress = document.getElementById('progress');
+  function onScroll(){
+    const y = window.scrollY;
+    header.classList.toggle('scrolled', y > 40);
+    const h = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.width = (h>0 ? (y/h)*100 : 0) + '%';
+  }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  // ---- mobile menu ----
+  const burger = document.getElementById('burger');
+  const menu = document.getElementById('menu');
+  burger.addEventListener('click', ()=>{ menu.classList.toggle('open'); burger.classList.toggle('x'); });
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{ menu.classList.remove('open'); burger.classList.remove('x'); }));
+
+  // ---- cursor glow (desktop / fine pointer only) ----
+  const glow = document.getElementById('glow');
+  if(window.matchMedia('(pointer:fine)').matches){
+    let gx=innerWidth/2, gy=innerHeight/2, cx=gx, cy=gy;
+    addEventListener('mousemove',e=>{gx=e.clientX;gy=e.clientY;});
+    (function loop(){ cx+=(gx-cx)*.12; cy+=(gy-cy)*.12; glow.style.left=cx+'px'; glow.style.top=cy+'px'; requestAnimationFrame(loop); })();
+  } else { glow.style.display='none'; }
+
+  // ---- reveal on scroll ----
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} });
+  },{threshold:.14, rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // ---- rotating roles ----
+  const roles = ['Data & AI strategy','agentic AI platforms','enterprise architecture','AI governance','high-performance teams','the agent factory'];
+  const roleEl = document.getElementById('role');
+  let ri=0;
+  function rotate(){
+    roleEl.style.transition='opacity .4s, transform .4s';
+    roleEl.style.opacity='0'; roleEl.style.transform='translateY(-8px)';
+    setTimeout(()=>{
+      ri=(ri+1)%roles.length; roleEl.textContent=roles[ri];
+      roleEl.style.opacity='1'; roleEl.style.transform='translateY(0)';
+    },420);
+  }
+  setInterval(rotate, 2600);
+
+  // ---- count-up stats ----
+  const counted = new WeakSet();
+  function animateCount(el){
+    if(counted.has(el)) return; counted.add(el);
+    const target = parseFloat(el.dataset.target);
+    const prefix = el.dataset.prefix || '';
+    const suffix = el.dataset.suffix || '';
+    const dur = 1600; const start = performance.now();
+    function tick(now){
+      const p = Math.min((now-start)/dur, 1);
+      const eased = 1-Math.pow(1-p,3);
+      const val = target>=100 ? Math.round(target*eased) : (Math.round(target*eased*10)/10);
+      el.textContent = prefix + (Number.isInteger(target)? Math.round(target*eased): val) + suffix;
+      if(p<1) requestAnimationFrame(tick); else el.textContent = prefix+target+suffix;
+    }
+    requestAnimationFrame(tick);
+  }
+  const statIO = new IntersectionObserver((entries)=>{
+    entries.forEach(en=>{ if(en.isIntersecting){ animateCount(en.target); statIO.unobserve(en.target);} });
+  },{threshold:.6});
+  document.querySelectorAll('.stat-num').forEach(el=>statIO.observe(el));
+
+  // ---- 3D tilt on venture + expertise cards ----
+  if(window.matchMedia('(pointer:fine)').matches){
+    document.querySelectorAll('.venture, .exp-card').forEach(card=>{
+      card.addEventListener('mousemove', e=>{
+        const r = card.getBoundingClientRect();
+        const px = (e.clientX-r.left)/r.width - .5;
+        const py = (e.clientY-r.top)/r.height - .5;
+        card.style.transform = `translateY(-5px) perspective(900px) rotateX(${ -py*4 }deg) rotateY(${ px*5 }deg)`;
+      });
+      card.addEventListener('mouseleave', ()=>{ card.style.transform=''; });
+    });
+  }
+
+  // ---- subtle parallax on hero blobs ----
+  const blobs = document.querySelectorAll('.hero .blob');
+  if(window.matchMedia('(pointer:fine)').matches){
+    addEventListener('mousemove', e=>{
+      const dx = (e.clientX/innerWidth - .5), dy = (e.clientY/innerHeight - .5);
+      blobs.forEach((b,i)=>{ const f=(i+1)*14; b.style.marginLeft=(dx*f)+'px'; b.style.marginTop=(dy*f)+'px'; });
+    });
+  }
+</script>
+</body>
+</html>
